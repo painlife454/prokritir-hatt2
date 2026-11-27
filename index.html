@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prokritir Haat – Pure Organic Food, Delivered</title>
+<meta name="description" content="Pure honey, spices, ghee, dates and nuts. Cash on delivery across Bangladesh.">
+<style>
+:root{--bg:#faf6f0;--surface:#fff;--ink:#1d2523;--muted:#68726e;--line:#e8e1d6;--nav:#0d2b2a;--org:#f28c1e;--red:#c8321e;--tile:#f6f0e6;--soft:#f3efe8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101716;--surface:#18211f;--ink:#eef2ee;--muted:#9fb0aa;--line:#2a3835;--tile:#202c29;--soft:#202c29;--red:#ff846e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101716;--surface:#18211f;--ink:#eef2ee;--muted:#9fb0aa;--line:#2a3835;--tile:#202c29;--soft:#202c29;--red:#ff846e;color-scheme:dark}
+html{scroll-padding-top:150px;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.5}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:30}
+button,input,textarea{font:inherit;color:inherit}button{cursor:pointer}
+:focus-visible{outline:3px solid var(--org);outline-offset:2px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.top{background:var(--surface)}
+.bar{display:flex;align-items:center;gap:26px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--org);font-weight:800;line-height:1;font-size:1.15rem;letter-spacing:.5px;white-space:nowrap}
+.logo i{width:48px;height:48px;border-radius:14px;background:var(--org);display:grid;place-items:center}
+.search{flex:1;display:flex;background:var(--soft);border-radius:12px;min-width:0}
+.search input{flex:1;border:0;background:none;padding:14px 18px;min-width:0}
+.search button{background:none;border:0;padding:0 16px}
+.acts{display:flex;gap:22px}
+.act{background:none;border:0;display:grid;justify-items:center;gap:2px;font-size:.92rem;position:relative;padding:0;color:var(--ink)}
+.act svg,.search svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.act em{position:absolute;top:-6px;right:-2px;background:var(--org);color:#fff;font-style:normal;font-size:.72rem;font-weight:700;min-width:19px;height:19px;border-radius:99px;display:grid;place-items:center}
+nav{background:var(--nav)}
+nav .wrap{display:flex;gap:30px;overflow-x:auto;scrollbar-width:none}
+nav button{background:none;border:0;color:#fff;padding:22px 0;font-size:1.05rem;white-space:nowrap;border-bottom:3px solid transparent}
+nav button[aria-current="true"]{border-color:var(--org)}
+.hero{display:grid;grid-template-columns:2.05fr 1fr;gap:20px;padding:28px 0 8px}
+.slider{position:relative;border-radius:18px;overflow:hidden;min-height:400px}
+.sl{position:absolute;inset:0;display:grid;grid-template-columns:1.1fr 1fr;align-items:center;padding:0 44px;opacity:0;transition:opacity .6s;pointer-events:none;color:#2a1c06}
+.sl.on{opacity:1;pointer-events:auto}
+.sl h1{font-size:clamp(1.9rem,3.6vw,3.2rem);line-height:1.12;margin:0 0 12px;letter-spacing:-.5px}
+.sl p{margin:0 0 22px;font-size:1.1rem;opacity:.8}
+.sl .art{height:86%;justify-self:center}
+.sl .art svg{height:100%;width:auto;filter:drop-shadow(0 18px 18px rgba(0,0,0,.22))}
+.btn{display:inline-block;background:var(--org);color:#fff;border:0;border-radius:10px;padding:12px 24px;font-weight:700}
+.dots{position:absolute;left:44px;bottom:20px;display:flex;gap:8px}
+.dots button{width:12px;height:12px;border-radius:50%;border:0;padding:0;background:rgba(0,0,0,.25)}
+.dots button[aria-current="true"]{background:var(--org)}
+.promo{border-radius:18px;background:linear-gradient(160deg,#f6a13a,#d4660a);color:#fff;padding:28px 26px;display:flex;flex-direction:column;overflow:hidden}
+.promo small{font-weight:600;opacity:.9}
+.promo h2{font-size:2.2rem;line-height:1.1;margin:6px 0 14px}
+.promo .trio{display:flex;justify-content:center;gap:0;margin-top:auto}
+.promo .trio svg{width:34%;filter:drop-shadow(0 10px 8px rgba(0,0,0,.3))}
+.promo .trio svg:nth-child(2){transform:translateY(-10px) scale(1.1)}
+.promo .btn{background:#fff;color:#a8500a;align-self:flex-start}
+h2.sec{text-align:center;font-size:1.8rem;font-weight:500;margin:36px 0 20px}
+.cats{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.cat{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px 10px 12px;text-align:center;font-weight:600}
+.cat svg{height:96px;width:auto}
+.cat:hover{border-color:var(--org)}
+.sh{display:flex;justify-content:space-between;align-items:baseline;margin:40px 0 16px}
+.sh h2{margin:0;font-size:1.6rem}
+.sh span{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.pic{height:200px;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 85%,var(--tile),var(--surface) 75%);position:relative}
+.pic svg,.pic img{height:84%;width:auto;max-width:90%;object-fit:contain;filter:drop-shadow(0 8px 8px rgba(0,0,0,.18))}
+.off{position:absolute;top:12px;left:12px;background:var(--red);color:#fff;font-size:.78rem;font-weight:700;border-radius:6px;padding:1px 8px}
+.wish{position:absolute;top:8px;right:8px;background:var(--surface);border:1px solid var(--line);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;padding:0}
+.wish svg{width:18px;height:18px;fill:none;stroke:var(--ink);stroke-width:2}
+.wish[aria-pressed="true"] svg{fill:var(--red);stroke:var(--red)}
+.info{padding:12px 16px 16px;display:flex;flex-direction:column;flex:1}
+.info h3{margin:0;font-size:1.02rem;line-height:1.35}
+.info small{color:var(--muted)}
+.price{margin-top:auto;padding-top:8px;font-weight:700;font-size:1.2rem}
+.price s{color:var(--muted);font-weight:400;font-size:.9rem;margin-left:6px}
+.add{margin-top:10px;border:2px solid var(--org);background:transparent;border-radius:10px;padding:8px;font-weight:700;color:var(--ink)}
+.add:hover{background:var(--org);color:#fff}
+.empty{grid-column:1/-1;color:var(--muted);padding:24px 0}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;background:var(--nav);color:#fff;border-radius:18px;padding:30px;margin:46px 0}
+.feat h3{margin:0 0 4px}.feat p{margin:0;opacity:.8}
+footer{border-top:1px solid var(--line);padding:26px 0 90px;color:var(--muted);font-size:.93rem}
+.fcart{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:25;width:98px;border:0;padding:0;border-radius:12px 0 0 12px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.2)}
+.fcart b{display:block;background:var(--org);color:#fff;padding:12px 4px 8px;font-weight:500}
+.fcart b svg{width:28px;height:28px;fill:none;stroke:#fff;stroke-width:1.8;display:block;margin:0 auto 2px}
+.fcart span{display:block;background:var(--surface);color:var(--org);font-weight:700;padding:10px 4px}
+.chat{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:25;width:62px;height:62px;border-radius:18px;background:var(--org);display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.chat svg{width:30px;height:30px;fill:#fff}
+.shade{position:fixed;inset:0;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .2s;z-index:40}.shade.on{opacity:1;pointer-events:auto}
+aside{position:fixed;top:0;right:0;bottom:0;width:min(430px,100%);background:var(--surface);z-index:50;transform:translateX(100%);transition:transform .25s;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+aside.on{transform:none}
+.ah{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line)}
+.ah h2{margin:0;font-size:1.2rem}.x{background:none;border:0;font-size:1.7rem;line-height:1}
+.items{flex:1;overflow:auto;padding:6px 20px}
+.row{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+.row .e{width:58px;height:58px;border-radius:10px;background:var(--tile);display:grid;place-items:center;flex:none}
+.row .e svg,.row .e img{height:48px;width:auto}
+.row .t{flex:1;min-width:0}.row .t b{display:block;font-weight:600;line-height:1.3}
+.qty{display:flex;align-items:center;gap:8px;margin-top:4px}
+.qty button{width:28px;height:28px;border-radius:8px;border:1px solid var(--line);background:var(--bg)}
+.co{padding:14px 20px;border-top:1px solid var(--line);display:grid;gap:8px}
+.co input,.co textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--bg)}
+.sum{display:flex;justify-content:space-between}.sum.tot{font-weight:700;font-size:1.15rem}
+.wa{background:#1a8a4a;color:#fff;border:0;border-radius:10px;padding:13px;font-weight:700}
+.err{color:var(--red);font-size:.9rem;min-height:1.2em;margin:0}.note{color:var(--muted);font-size:.85rem;margin:0}
+@media (max-width:1000px){.hero{grid-template-columns:1fr}.promo{min-height:300px}.cats{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:720px){.bar{flex-wrap:wrap;gap:12px}.search{order:3;flex:1 1 100%}.acts{gap:14px;margin-left:auto}.act span{display:none}.logo{font-size:1rem}
+.slider{min-height:380px}.sl{grid-template-columns:1fr;padding:22px;align-content:start;gap:0}.sl .art{height:170px;order:-1;margin-bottom:8px}.dots{left:22px}.sl p{margin-bottom:14px}.fcart{top:auto;bottom:96px;transform:none}nav .wrap{gap:22px}nav button{padding:16px 0}html{scroll-padding-top:200px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.logo span{max-width:130px;text-transform:uppercase}
+.lnk{background:none;border:0;color:var(--org);font-weight:600;padding:0}
+.ah .r{display:flex;gap:16px;align-items:center}
+.row .side{display:grid;justify-items:end;gap:8px}
+.rm{background:none;border:0;color:var(--red);padding:4px;display:flex;align-items:center;gap:4px;font-size:.9rem;font-weight:600}
+.rm svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8}.rm:hover{color:var(--red)}
+.qn{width:54px;text-align:center;border:1px solid var(--line);border-radius:8px;background:var(--bg);padding:3px}
+.sl .art img{height:100%;width:100%;object-fit:contain}.promo .trio img{width:34%;height:auto;object-fit:contain}.cat img{height:96px;width:auto;object-fit:contain}
+.add:disabled{opacity:.5;cursor:not-allowed}.add:disabled:hover{background:transparent;color:var(--ink)}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:#16221f;color:#fff;border-radius:12px;padding:12px 16px;display:flex;gap:16px;align-items:center;opacity:0;pointer-events:none;transition:.2s;z-index:80;max-width:92vw}
+#toast.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}#toast button{background:none;border:0;color:#ffb35c;font-weight:700}
+#adm{position:fixed;inset:0;z-index:60;background:var(--bg);overflow:auto;padding-top:env(safe-area-inset-top,0px)}#adm[hidden]{display:none}
+.ad{max-width:960px;margin:0 auto;padding:20px 20px 80px}.ad h1{margin:0;font-size:1.6rem}.ad h2{font-size:1.25rem;margin:18px 0 6px}
+.atabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.atabs button{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:7px 16px}
+.atabs button[aria-pressed="true"]{background:var(--nav);color:#fff;border-color:var(--nav)}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:12px 0}
+.fg label,.imgf label{display:grid;gap:4px;font-size:.88rem;color:var(--muted)}
+.ad input:not([type=checkbox]):not([type=color]),.ad select,.ad textarea{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--surface);color:var(--ink)}
+.ad input[type=color]{width:100%;height:38px;padding:2px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.ck{display:flex!important;align-items:center;gap:8px;color:var(--ink)!important;align-self:end}
+details.pc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:10px 0}details.pc summary{cursor:pointer}
+.imgf{display:flex;gap:12px;align-items:end;flex-wrap:wrap}.imgf>label:first-child{flex:1;min-width:220px}.imgf img{height:56px;border-radius:8px;border:1px solid var(--line)}
+.bt{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 12px;cursor:pointer;color:var(--ink);display:inline-block}.dng{color:var(--red);border-color:var(--red)}
+.rw{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0;align-items:center}.rw>input{flex:1;min-width:160px}
+.ad hr{border:0;border-top:1px solid var(--line);margin:22px 0}.ad .btn{cursor:pointer;text-decoration:none}
+aside{overflow-y:auto;overscroll-behavior:contain}aside .ah{position:sticky;top:0;background:var(--surface);z-index:2}aside .items{flex:none;overflow:visible}aside .co{flex:none}
+.otw{overflow-x:auto}.ot{width:100%;border-collapse:collapse;font-size:.92rem;min-width:640px}.ot th,.ot td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}.ot th{color:var(--muted);font-weight:600}.ot select{width:auto}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:12px 0}.kp>div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px}.kp b{display:block;font-size:1.5rem;line-height:1.3}.kp span{color:var(--muted);font-size:.88rem;display:block}
+.chw{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px;overflow-x:auto}.chw svg{width:100%;min-width:520px;height:auto;display:block}
+a.act{text-decoration:none;color:var(--ink)}.acts{margin-left:auto;position:relative}
+.logo{flex:none}.logo span{white-space:normal;max-width:140px;overflow-wrap:anywhere;line-height:1.05}
+.search{max-width:360px}.search input{padding:10px 14px}.search svg{width:22px;height:22px}
+.menu{position:absolute;right:0;top:calc(100% + 12px);background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.2);min-width:220px;padding:6px;z-index:40;display:grid}
+.menu[hidden]{display:none}.menu a{padding:10px 14px;border-radius:8px;color:var(--ink);text-decoration:none}.menu a:hover{background:var(--soft)}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:70;display:grid;place-items:center;padding:16px}.modal[hidden]{display:none}
+.mc{background:var(--surface);border-radius:16px;width:min(440px,100%);max-height:100%;overflow:auto}.mb{padding:16px 20px 22px;display:grid;gap:10px}
+.mb input,.mb textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--bg)}
+#abt{position:fixed;inset:0;z-index:60;background:var(--bg);overflow:auto;padding-top:env(safe-area-inset-top,0px)}#abt[hidden]{display:none}
+.kp a{color:var(--org);text-decoration:none;font-weight:700}.kp a:hover{text-decoration:underline}
+.aimg{max-width:100%;max-height:380px;border-radius:14px;margin:12px 0;object-fit:cover}.atx p{line-height:1.75;font-size:1.05rem;max-width:70ch}
+@media (max-width:720px){.search{max-width:none}.acts{gap:12px}.menu{right:-6px}}
+.lgi{display:none;height:74px;width:74px;object-fit:contain;border-radius:50%;background:#fff;flex:none}
+@media (max-width:720px){.lgi{height:56px;width:56px}}
+.mb label{display:grid;gap:4px;font-size:.88rem;color:var(--muted)}.mb label.ck{display:flex;gap:8px;align-items:center;color:var(--ink)}.mb input[type=checkbox]{width:auto}
+.mb .atabs{margin:0 0 4px}.ord{border:1px solid var(--line);border-radius:12px;padding:12px;display:grid;gap:6px}.ord small{color:var(--muted)}
+.wrap.bar{padding:14px 20px}
+.off,.wish{z-index:2}
+.pic{overflow:hidden}.pic img{height:auto;width:auto;max-height:172px;max-width:88%;object-fit:contain;filter:none;mix-blend-mode:multiply}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pic img{mix-blend-mode:normal}}
+:root[data-theme="dark"] .pic img{mix-blend-mode:normal}
+.calc{grid-column:1/-1;margin:0;font-weight:600;color:var(--org)}
+.gbox{display:grid;gap:12px;padding-top:30px}.gbox label{display:grid;gap:4px;font-size:.88rem;color:var(--muted)}.gbox label.ck{display:flex;gap:8px;align-items:center;color:var(--ink)}.gbox input[type=checkbox]{width:auto}
+.rcode{font:700 1.5rem/1.3 ui-monospace,Menlo,Consolas,monospace;letter-spacing:2px;background:var(--surface);border:2px dashed var(--org);border-radius:12px;padding:16px;text-align:center;user-select:all;margin:0}
+</style>
+</head>
+<body>
+<header>
+ <div class="top"><div class="wrap bar">
+  <a class="logo" href="#top" aria-label="Prokritir Haat home"><i><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c0-6 0-9 0-12M12 14C7 14 5 11 5 6c5 0 7 3 7 8zM12 11c0-4 2-6 7-6 0 5-2 7-7 6z"/></svg></i><img id="lgi" class="lgi" alt=""><span id="lg"></span></a>
+  <form class="search" id="sf" role="search"><input id="q" type="search" placeholder="Search in…" aria-label="Search products"><button type="submit" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button></form>
+  <div class="acts">
+   <a class="act" id="track" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 21s-6-5.5-6-10a6 6 0 0 1 12 0c0 4.5-6 10-6 10z"/><circle cx="12" cy="11" r="2"/></svg><span>Track Order</span></a>
+   <button class="act" id="acct" type="button"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg><span id="acl">Sign In</span></button>
+   <button class="act" id="wl" type="button"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><em id="wc">0</em><span>Wishlist</span></button>
+   <button class="act" id="openCart" type="button"><svg viewBox="0 0 24 24"><path d="M3 4h3l2 11h10l2-8H7"/><circle cx="9" cy="19" r="1"/><circle cx="17" cy="19" r="1"/></svg><em id="count">0</em><span>Cart</span></button>
+   <button class="act" id="more" type="button" aria-haspopup="true" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h5"/></svg><span>More</span></button>
+   <div class="menu" id="moremenu" hidden><a href="#about">About us</a><a href="#info">Delivery &amp; returns</a><a id="mcontact" href="#" target="_blank" rel="noopener">Contact on WhatsApp</a></div>
+  </div>
+ </div></div>
+ <nav><div class="wrap" id="nav" aria-label="Categories"></div></nav>
+</header>
+
+<main id="top">
+ <div class="wrap">
+  <section class="hero">
+   <div class="slider" id="slider" aria-roledescription="carousel"></div>
+   <div class="promo" id="promo"></div>
+  </section>
+
+  <h2 class="sec">Featured Categories</h2>
+  <div class="cats" id="cats"></div>
+
+  <div class="sh" id="shop"><h2 id="st">Best Sellers</h2><span id="sc"></span></div>
+  <div class="grid" id="grid"></div>
+
+  <div class="feat" id="info"></div>
+ </div>
+</main>
+<footer><div class="wrap"><span id="ft"></span></div></footer>
+
+<button class="fcart" id="fc" type="button" aria-label="Open cart"><b><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8zM9 8a3 3 0 0 1 6 0"/></svg><span style="all:unset" id="fci">0 Items</span></b><span id="fct">৳0.00</span></button>
+<a class="chat" id="chat" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg></a>
+
+<div id="adm" hidden></div><div id="abt" hidden></div><div id="acc" class="modal" hidden></div><div id="toast" role="status" aria-live="polite"></div>
+<div class="shade" id="shade"></div>
+<aside id="cart" aria-label="Cart" aria-hidden="true">
+ <div class="ah"><h2>Your cart</h2><div class="r"><button class="lnk" id="clr" type="button">Clear cart</button><button class="x" id="closeCart" aria-label="Close cart">×</button></div></div>
+ <div class="items" id="items"></div>
+ <div class="co" id="co">
+  <div class="sum"><span>Subtotal</span><span id="sub"></span></div>
+  <div class="sum" id="svrow" style="display:none;color:var(--red)"><span>Discount already applied</span><span id="sv"></span></div>
+  <div class="sum"><span>Delivery</span><span id="ship"></span></div>
+  <div class="sum tot"><span>Total</span><span id="tot"></span></div>
+  <input id="nm" placeholder="Full name" autocomplete="name">
+  <input id="ph" placeholder="Mobile number (01XXXXXXXXX)" inputmode="tel" autocomplete="tel">
+  <textarea id="ad" rows="2" placeholder="Full address (area, thana, district)" autocomplete="street-address"></textarea>
+  <p class="err" id="err" role="alert"></p>
+  <button class="wa" id="send" type="button">Place order on WhatsApp</button>
+  <p class="note">Cash on delivery. We confirm every order by WhatsApp or phone.</p>
+ </div>
+</aside>
+
+<script src="config.js"></script>
+<script>
+const CFG=window.HAAT_CONFIG||{},SBU=String(CFG.supabaseUrl||"").replace(/\/+$/,""),SBK=String(CFG.supabaseKey||""),useDB=!!(SBU&&SBK);
+// Default store data. Everything below can be edited from the Admin panel (open this page with #admin at the end of the address).
+const DEF={
+settings:{logo:"data:image/webp;base64,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",name:"Prokritir Haat",whatsapp:"8801700000000",hotline:"017XXXXXXXX",address:"Dhaka, Bangladesh",free:1500,dhaka:60,outside:120},
+cats:["Honey","Oil & Ghee","Dates","Spices","Nuts & Seeds","Beverage","Rice","Flours & Lentils","Pickle"],
+products:[
+{id:1,n:"Sundarban Wild Honey",u:"1 kg",p:1200,o:1400,c:"Honey",k:"jar",col:["#f5b92e","#a65d00"],l:"HONEY"},
+{id:2,n:"Litchi Flower Honey",u:"500 g",p:650,c:"Honey",k:"jar",col:["#f7c84a","#b8730a"],l:"LITCHI HONEY"},
+{id:3,n:"Black Seed Honey",u:"500 g",p:720,o:800,c:"Honey",k:"jar",col:["#a8561a","#4a1f06"],l:"BLACK SEED"},
+{id:4,n:"Turmeric Powder",u:"500 g",p:260,c:"Spices",k:"pouch",col:["#f2b705","#b27800"],l:"TURMERIC"},
+{id:5,n:"Red Chili Powder",u:"500 g",p:380,c:"Spices",k:"pouch",col:["#d63a1f","#7d1608"],l:"RED CHILI"},
+{id:6,n:"Coriander Powder",u:"500 g",p:240,c:"Spices",k:"pouch",col:["#8fa83a","#4a5c14"],l:"CORIANDER"},
+{id:7,n:"Pure Cow Ghee",u:"500 g",p:990,o:1100,c:"Oil & Ghee",k:"tin",col:["#f4d35e","#b58b11"],l:"PURE GHEE"},
+{id:8,n:"Cold-Pressed Mustard Oil",u:"1 L",p:290,c:"Oil & Ghee",k:"bottle",col:["#e3c21a","#7a5f00"],l:"MUSTARD OIL"},
+{id:9,n:"Black Seed Oil",u:"250 ml",p:520,c:"Oil & Ghee",k:"bottle",col:["#4a3420","#150c05"],l:"BLACK SEED OIL"},
+{id:10,n:"Maryam Dates",u:"1 kg",p:1100,c:"Dates",k:"box",col:["#7a4423","#2e1408"],l:"MARYAM DATES"},
+{id:11,n:"Cashew Nuts",u:"500 g",p:850,o:950,c:"Nuts & Seeds",k:"pouch",col:["#e8c88a","#a67c3a"],l:"CASHEW"},
+{id:12,n:"Almonds",u:"500 g",p:780,c:"Nuts & Seeds",k:"pouch",col:["#c9a46b","#7a5a2a"],l:"ALMOND"},
+{id:13,n:"Darjeeling Leaf Tea",u:"250 g",p:420,c:"Beverage",k:"box",col:["#2f6b47","#123222"],l:"LEAF TEA"},
+{id:14,n:"Miniket Rice",u:"5 kg",p:480,c:"Rice",k:"sack",col:["#e9dcc0","#a89468"],l:"MINIKET RICE"},
+{id:15,n:"Red Lentils (Masoor Dal)",u:"1 kg",p:160,c:"Flours & Lentils",k:"pouch",col:["#e2733a","#8f3410"],l:"MASOOR DAL"},
+{id:16,n:"Mixed Pickle",u:"500 g",p:280,c:"Pickle",k:"jar",col:["#b8860b","#5c3d00"],l:"MIXED PICKLE"}],
+slides:[
+{h:"Pure honey, straight from the hive",p:"Sundarban wild honey, 1 kg jar. Raw, unheated, no sugar added.",b:"Shop honey",go:"Honey",pid:1,bg1:"#f7ead0",bg2:"#f0cf85",tc:"#2a1c06",img:""},
+{h:"Cold-pressed mustard oil",p:"Wood-pressed in small batches, sharp aroma, nothing added.",b:"Shop oil & ghee",go:"Oil & Ghee",pid:8,bg1:"#eef0cf",bg2:"#d3d98a",tc:"#2a1c06",img:""},
+{h:"Dates and nuts for every day",p:"Maryam dates, cashews and almonds, packed fresh.",b:"Shop dates",go:"Dates",pid:10,bg1:"#f1e2d3",bg2:"#dcb894",tc:"#2a1c06",img:""}],
+promo:{s:"Honey Special",h:"Combo Pack",h2:"Save ৳200",b:"Shop honey",go:"Honey",c1:"#f6a13a",c2:"#d4660a"},
+feats:[{h:"Delivery across Bangladesh",p:"Dhaka ৳60, outside Dhaka ৳120. Free above ৳1,500."},{h:"Cash on delivery",p:"Check your order first, pay when it arrives."},{h:"Damaged? We replace it",p:"Message us within 24 hours of delivery with a photo."},{h:"Direct from source",p:"Sourced from farmers and beekeepers, packed in small batches."}],
+about:{title:"About us",text:"Welcome to Prokritir Haat. We bring pure, chemical-free honey, spices, ghee and dried fruits straight from farmers and beekeepers to your door.\n\nThis is sample text. Open the Admin panel and go to the About us tab to write your own story, add a photo and your contact details.",img:"",email:"",hours:"Saturday to Thursday, 9 am to 9 pm",fb:""}};
+
+const $=id=>document.getElementById(id),tk=n=>"৳"+Number(n||0).toLocaleString("en-US");
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const store=(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}};
+const put=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}};
+const clone=o=>JSON.parse(JSON.stringify(o));
+const storageOK=(()=>{try{localStorage.setItem("_t","1");localStorage.removeItem("_t");return true}catch(e){return false}})();
+try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist()}catch(e){}
+const safeImg=u=>/^(data:image\/|https:\/\/|[\w][\w./ -]*$)/i.test(u||"")?u:"";
+const hx=c=>/^#[0-9a-f]{6}$/i.test(c)?c:"#888888";
+const mig=d=>{d.products.forEach(x=>{if(x.rp===undefined){const big=x.o>x.p;x.rp=big?x.o:x.p;x.dt="tk";x.dv=big?x.o-x.p:0}});return d};
+const merge=j=>{const d=Object.assign(clone(DEF),j);d.settings=Object.assign({},DEF.settings,j.settings);return mig(d)};
+
+// ---- product art (glossy SVG illustrations) ----
+let gid=0;
+const LB={jar:[32,62,56,42],bottle:[38,68,44,40],pouch:[32,34,56,62],tin:[30,62,60,46],sack:[34,58,52,48],box:[32,40,56,70]};
+function art(k,col,l){
+ const i="g"+(gid++),[a,b]=col,[x,y,w,h]=LB[k],cx=x+w/2,ws=l.split(" ").slice(0,2);
+ const fill=`fill="url(#${i})"`;
+ let s=`<defs><linearGradient id="${i}"><stop offset="0" stop-color="${b}"/><stop offset=".32" stop-color="${a}"/><stop offset=".62" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient><linearGradient id="${i}l"><stop offset="0" stop-color="#a77b12"/><stop offset=".4" stop-color="#f3d36a"/><stop offset="1" stop-color="#8a620a"/></linearGradient></defs><ellipse cx="60" cy="134" rx="38" ry="5" fill="#000" opacity=".16"/>`;
+ const lid=`fill="url(#${i}l)"`;
+ if(k=="jar")s+=`<rect x="20" y="34" width="80" height="94" rx="18" ${fill}/><rect x="26" y="12" width="68" height="24" rx="5" ${lid}/><rect x="26" y="30" width="68" height="4" fill="#000" opacity=".18"/><rect x="27" y="46" width="7" height="64" rx="3.5" fill="#fff" opacity=".35"/>`;
+ if(k=="bottle")s+=`<rect x="50" y="4" width="20" height="16" rx="3" ${lid}/><rect x="52" y="20" width="16" height="20" ${fill}/><path d="M34 58Q34 40 52 40H68Q86 40 86 58V122Q86 131 78 131H42Q34 131 34 122Z" ${fill}/><rect x="39" y="52" width="5" height="68" rx="2.5" fill="#fff" opacity=".3"/>`;
+ if(k=="pouch")s+=`<path d="M24 12H96L101 124Q101 133 92 133H28Q19 133 19 124Z" ${fill}/><rect x="24" y="12" width="72" height="9" fill="#000" opacity=".16"/><path d="M24 22H96" stroke="#fff" stroke-opacity=".3" stroke-dasharray="2 2"/><rect x="26" y="40" width="5" height="76" rx="2.5" fill="#fff" opacity=".25"/>`;
+ if(k=="tin")s+=`<rect x="24" y="40" width="72" height="88" rx="6" ${fill}/><rect x="22" y="26" width="76" height="18" rx="5" ${lid}/><rect x="30" y="52" width="5" height="64" rx="2.5" fill="#fff" opacity=".3"/>`;
+ if(k=="sack")s+=`<path d="M30 20Q60 6 90 20L103 124Q60 140 17 124Z" ${fill}/><path d="M32 24Q60 36 88 24" stroke="#6b4a1f" stroke-width="5" fill="none"/><path d="M30 20L22 12M90 20L98 12" stroke="#6b4a1f" stroke-width="4"/>`;
+ if(k=="box")s+=`<rect x="24" y="16" width="72" height="114" rx="4" ${fill}/><rect x="24" y="16" width="72" height="10" fill="#000" opacity=".18"/><rect x="29" y="34" width="5" height="88" rx="2.5" fill="#fff" opacity=".22"/>`;
+ s+=`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="4" fill="#fffaf0"/><rect x="${x}" y="${y}" width="${w}" height="4" rx="2" fill="${a}"/><text x="${cx}" y="${y+h/2+(ws.length>1?-1:4)}" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-weight="800" font-size="${ws.some(t=>t.length>7)?7.5:9}" fill="${b}">${ws[0]}</text>`;
+ if(ws[1])s+=`<text x="${cx}" y="${y+h/2+9}" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-weight="800" font-size="${ws[1].length>7?7.5:9}" fill="${b}">${ws[1]}</text>`;
+ s+=`<text x="${cx}" y="${y+h-5}" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="4.6" fill="#777" letter-spacing=".6">PROKRITIR HAAT</text>`;
+ return `<svg viewBox="0 0 120 140" role="img" aria-label="${l}">${s}</svg>`;
+}
+// ---- cloud database (Supabase): active only when config.js contains your project URL and key ----
+const PHONE_DOMAIN="customers.prokritirhaat.com";
+let sess=useDB?store("sb_session",null):null,isAdminDB=false,hasAdminDB=useDB?null:true,dbErr="",dbState="",recTok="",myOrd=[],dbT;
+const saveSess=s=>{sess=s;if(s)put("sb_session",s);else{try{localStorage.removeItem("sb_session")}catch(e){}}};
+const fe=m=>/already (been )?registered/i.test(m)?"An account with this number already exists. Please sign in.":/invalid (login|credentials)/i.test(m)?"Wrong login details. Please check your password.":m;
+async function refreshSess(){
+ if(!sess||!sess.refresh_token||(sess.expires_at||0)*1000>Date.now()+60000)return;
+ try{const r=await fetch(SBU+"/auth/v1/token?grant_type=refresh_token",{method:"POST",headers:{apikey:SBK,"Content-Type":"application/json"},body:JSON.stringify({refresh_token:sess.refresh_token})}),j=await r.json();if(r.ok&&j.access_token)saveSess(j);else saveSess(null)}catch(e){}}
+async function sb(path,o={}){
+ if(!o.anon)await refreshSess();
+ const h=Object.assign({apikey:SBK},o.headers||{}),tok=o.token||(!o.anon&&sess?sess.access_token:""),blob=typeof Blob!=="undefined"&&o.body instanceof Blob;
+ if(tok)h.Authorization="Bearer "+tok;
+ if(o.body!==undefined&&!blob&&!h["Content-Type"])h["Content-Type"]="application/json";
+ const r=await fetch(SBU+path,{method:o.method||"GET",headers:h,body:o.body===undefined?undefined:blob?o.body:JSON.stringify(o.body)});
+ const t=await r.text();let j=null;try{j=t?JSON.parse(t):null}catch(e){}
+ if(!r.ok)throw new Error((j&&(j.msg||j.message||j.error_description||j.error))||("Error "+r.status));
+ return j}
+const authIn=async(email,password)=>{const j=await sb("/auth/v1/token?grant_type=password",{method:"POST",anon:true,body:{email,password}});saveSess(j);return j};
+const authUp=async(email,password,data)=>{const j=await sb("/auth/v1/signup",{method:"POST",anon:true,body:{email,password,data}}),s=j&&(j.access_token?j:j.session);if(!s)throw new Error("Email confirmation is switched on in Supabase. Please switch it off (see the setup guide).");saveSess(s);return s};
+const authOut=async()=>{try{await sb("/auth/v1/logout",{method:"POST"})}catch(e){}saveSess(null)};
+const pEmail=ph=>ph+"@"+PHONE_DOMAIN;
+async function dbProfile(id){const r=await sb("/rest/v1/profiles?id=eq."+id+"&select=n,ph,ad");return r&&r[0]}
+async function dbMyOrders(){const r=await sb("/rest/v1/orders?select=id,no,d,items,t&order=id.desc&limit=100");return(r||[]).map(x=>({id:x.id,no:x.no,d:x.d,items:x.items||[],t:+x.t}))}
+async function dbLoadOrders(){const r=await sb("/rest/v1/orders?select=id,no,d,n,ph,ad,it,t,s&order=id.desc&limit=3000");O=(r||[]).map(x=>({id:x.id,no:x.no,d:x.d,n:x.n||"",ph:x.ph||"",ad:x.ad||"",it:x.it||"",t:+x.t||0,s:x.s||"New"}))}
+async function dbLoadStore(){const r=await sb("/rest/v1/store?id=eq.1&select=data",{anon:true});if(r&&r[0]&&r[0].data&&r[0].data.products){D=merge(r[0].data);put("store_cache",r[0].data)}renderAll()}
+const saveNote=()=>dbState=="saving"?"Saving to the database…":dbState=="saved"?"✓ Saved to the database. Customers can see the change now.":dbState=="error"?"⚠ Not saved. Check your internet and that you are signed in.":"Connected to the database. Every change is saved automatically.";
+const setSaveNote=()=>{const e=$("savenote");if(e)e.textContent=saveNote()};
+function dbSaveSoon(){dbState="saving";setSaveNote();clearTimeout(dbT);dbT=setTimeout(async()=>{try{const c=clone(D);delete c.settings.pin;await sb("/rest/v1/store",{method:"POST",headers:{Prefer:"resolution=merge-duplicates,return=minimal"},body:{id:1,data:c,updated_at:new Date().toISOString()}});dbState="saved";put("store_cache",c)}catch(e){dbState="error";toast("Could not save to the database: "+e.message)}setSaveNote()},900)}
+async function dbUpload(u){const bin=atob(u.split(",")[1]),a=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)a[i]=bin.charCodeAt(i);
+ const name=Date.now().toString(36)+Math.random().toString(36).slice(2,7)+".jpg";
+ await sb("/storage/v1/object/images/"+name,{method:"POST",headers:{"Content-Type":"image/jpeg","x-upsert":"true"},body:new Blob([a],{type:"image/jpeg"})});
+ return SBU+"/storage/v1/object/public/images/"+name}
+async function dbPlaceOrder(o){const items=Object.entries(cart).map(([id,q])=>{const x=byId(id);return{id:+id,n:x.n,u:x.u,p:x.p,q}});
+ await sb("/rest/v1/orders",{method:"POST",headers:{Prefer:"return=minimal"},body:{no:o.no,d:today(),uid:sess&&sess.user?sess.user.id:null,n:o.name,ph:o.ph,ad:o.ad,it:o.lines.join("\n"),items,t:o.total,s:"New"}})}
+async function dbRestore(){if(!sess||!sess.user)return;
+ try{isAdminDB=(await sb("/rest/v1/rpc/is_admin",{method:"POST",body:{}}))===true;
+  if(isAdminDB)unlocked=true;else{const pr=await dbProfile(sess.user.id);if(pr){cur={ph:pr.ph,n:pr.n,ad:pr.ad||"",uid:sess.user.id};accUI()}}
+ }catch(e){if(/jwt|expired|invalid/i.test(e.message))saveSess(null)}}
+async function dbInit(){
+ try{hasAdminDB=(await sb("/rest/v1/rpc/has_admin",{method:"POST",anon:true,body:{}}))===true}catch(e){dbErr=e.message}
+ await dbRestore();
+ if(isAdminDB&&(tab=="Order history"||tab=="Monthly report"))dbLoadOrders().then(adm).catch(()=>{});
+ adm();renderAll()}
+function handleRecovery(){if(!useDB)return;const p=new URLSearchParams((location.hash||"").replace(/^#/,""));
+ if(p.get("type")=="recovery"&&p.get("access_token")){recTok=p.get("access_token");aview="newpw";history.replaceState(null,"",location.pathname+location.search+"#admin")}}
+function DBFORGOT(){return`<p class="note">For your security, passwords can’t be reset automatically. Message us on WhatsApp with your mobile number and we will help you.</p><div><a class="btn" href="${esc(wa())}" target="_blank" rel="noopener">Message us on WhatsApp</a><button class="lnk" type="button" data-a3="v:in" style="margin-left:16px">Back to sign in</button></div>`}
+const dbProfileTab=()=>`<p class="note">Signed in as <b>${esc(sess.user.email)}</b>. Your admin account is stored securely in your database.</p>
+<h2>Profile</h2><div class="fg"><label>Your name<input id="p-n" value="${esc((sess.user.user_metadata||{}).name||"")}"></label></div><button class="bt" type="button" data-g="pname">Save name</button>
+<hr><h2>Change email (Gmail)</h2><div class="fg"><label>New email<input id="p-e" type="email" autocomplete="email"></label><label>Current password<input id="p-ew" type="password" autocomplete="current-password"></label></div><button class="bt" type="button" data-g="pemail">Change email</button>
+<hr><h2>Change password</h2><div class="fg"><label>Current password<input id="p-cw" type="password" autocomplete="current-password"></label><label>New password (at least 8 characters)<input id="p-nw" type="password" autocomplete="new-password"></label><label>Confirm new password<input id="p-nw2" type="password" autocomplete="new-password"></label></div><button class="bt" type="button" data-g="ppw">Change password</button>
+<hr><p class="note">Forgot your password? Sign out, then use “Forgot password?” on the sign in screen. A reset link is sent to your email.</p><button class="bt dng" type="button" data-g="logout">Sign out</button><p class="err" id="g-e" role="alert"></p>`;
+function gateDB(){
+ const f=(id,l,t,ac)=>`<label>${l}<input id="${id}" type="${t}" autocomplete="${ac}" ${t=="password"?"data-pw":""}></label>`,show='<label class="ck"><input type="checkbox" id="gshow">Show password</label>',er='<p class="err" id="g-e" role="alert"></p>',back='<p><a class="lnk" href="#top">← Back to store</a></p>';let h="";
+ if(aview=="newpw")h=`<h1>Set a new password</h1>${f("g-w","New password (at least 8 characters)","password","new-password")}${f("g-w2","Confirm new password","password","new-password")}${show}${er}<button class="btn" type="button" data-g="dbnewpw" data-gp>Save new password</button>`;
+ else if(hasAdminDB===null)h=dbErr?`<h1>Can’t reach the database</h1><p class="err">${esc(dbErr)}</p><p class="note">Check that config.js has the right URL and key, and that you ran the SQL setup in Supabase.</p>${back}`:`<h1>Connecting…</h1><p class="note">Please wait a moment.</p>`;
+ else if(!hasAdminDB)h=`<h1>Create your admin account</h1><p class="note">This is the first and only admin of this store. Use your Gmail so you remember it.</p>${f("g-n","Your name","text","name")}${f("g-m","Email (Gmail)","email","email")}${f("g-w","Password (at least 8 characters)","password","new-password")}${f("g-w2","Confirm password","password","new-password")}${show}${er}<button class="btn" type="button" data-g="dbsetup" data-gp>Create admin account</button>${back}`;
+ else if(aview=="forgot")h=`<h1>Reset password</h1><p class="note">Enter your admin email. We will send a reset link to it.</p>${f("g-m","Email","email","email")}${er}<div><button class="btn" type="button" data-g="dbrecover" data-gp>Send reset link</button><button class="lnk" type="button" data-g="back" style="margin-left:16px">Back to sign in</button></div>`;
+ else h=`<h1>Admin sign in</h1>${f("g-m","Email","email","email")}${f("g-w","Password","password","current-password")}${show}${er}<div><button class="btn" type="button" data-g="dblogin" data-gp>Sign in</button><button class="lnk" type="button" data-g="dbforgot" style="margin-left:16px">Forgot password?</button></div>${back}`;
+ $("adm").innerHTML=`<div class="ad" style="max-width:460px"><div class="gbox">${h}</div></div>`;const i=$("adm").querySelector("input:not([type=checkbox])");if(i)i.focus()}
+async function gateActDB(g){
+ const v=id=>($(id)?$(id).value:"");
+ try{
+  if(g=="back"||g=="dbforgot"){aview=g=="dbforgot"?"forgot":"";gate();return}
+  if(g=="logout"){await authOut();isAdminDB=false;unlocked=false;aview="";adm();return}
+  if(g=="dbsetup"){const m=v("g-m").trim().toLowerCase(),w=v("g-w");
+   if(!em(m))return gm("Enter a valid email address.");if(w.length<8)return gm("Password must be at least 8 characters.");if(w!==v("g-w2"))return gm("The two passwords don’t match.");
+   await authUp(m,w,{name:v("g-n").trim()||"Admin"});
+   if((await sb("/rest/v1/rpc/claim_admin",{method:"POST",body:{}}))!==true){await authOut();hasAdminDB=true;gate();return gm("An admin already exists. Please sign in.")}
+   isAdminDB=true;unlocked=true;hasAdminDB=true;adm();return}
+  if(g=="dblogin"){const m=v("g-m").trim().toLowerCase();await authIn(m,v("g-w"));
+   if((await sb("/rest/v1/rpc/is_admin",{method:"POST",body:{}}))!==true){await authOut();return gm("This account is not an admin.")}
+   isAdminDB=true;unlocked=true;adm();if(tab=="Order history"||tab=="Monthly report")dbLoadOrders().then(adm).catch(()=>{});return}
+  if(g=="dbrecover"){const m=v("g-m").trim().toLowerCase();if(!em(m))return gm("Enter a valid email address.");
+   await sb("/auth/v1/recover"+(/^https?:/.test(location.origin)?"?redirect_to="+encodeURIComponent(location.origin+location.pathname):""),{method:"POST",anon:true,body:{email:m}});
+   gm("If this email belongs to the admin, a reset link has been sent to it. Check your inbox.");return}
+  if(g=="dbnewpw"){const w=v("g-w");if(w.length<8)return gm("Password must be at least 8 characters.");if(w!==v("g-w2"))return gm("The two passwords don’t match.");
+   await sb("/auth/v1/user",{method:"PUT",token:recTok,anon:true,body:{password:w}});recTok="";aview="";adm();toast("Password changed. Please sign in with your new password.");return}
+  if(!unlocked||!sess)return;
+  if(g=="pname"){const j=await sb("/auth/v1/user",{method:"PUT",body:{data:{name:v("p-n").trim()||"Admin"}}});sess.user=j;saveSess(sess);toast("Name saved.");return}
+  if(g=="pemail"||g=="ppw"){
+   await authIn(sess.user.email,v(g=="pemail"?"p-ew":"p-cw"));
+   if(g=="pemail"){const m=v("p-e").trim().toLowerCase();if(!em(m))return gm("Enter a valid email address.");const j=await sb("/auth/v1/user",{method:"PUT",body:{email:m}});sess.user=j;saveSess(sess);adm();toast("Email saved. If your project asks for confirmation, check your inbox.");return}
+   const w=v("p-nw");if(w.length<8)return gm("New password must be at least 8 characters.");if(w!==v("p-nw2"))return gm("The two new passwords don’t match.");
+   await sb("/auth/v1/user",{method:"PUT",body:{password:w}});adm();toast("Password changed.")}
+ }catch(x){gm(fe(x.message))}}
+
+// ---- data: admin draft (this browser) > published store-data.json > defaults ----
+let draft=useDB?store("store_cache",null):store("draft",null),D=merge(draft&&draft.products?draft:{}),hasDraft=!useDB&&!!(draft&&draft.products);
+function loadPublished(){if(useDB){dbLoadStore().catch(()=>{});return}fetch("store-data.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.products&&!hasDraft){D=merge(j);renderAll()}}).catch(()=>{})}
+let pt;function persist(){if(useDB){renderAll();dbSaveSoon();return}hasDraft=true;clearTimeout(pt);pt=setTimeout(()=>{if(!put("draft",D))toast("Browser storage is full. Download your data file now so you don’t lose changes.")},300);renderAll()}
+
+// ---- state ----
+let cat="All",term="",cart=store("cart",{}),wish=store("wish",[]),slide=0,timer,tab="Products",unlocked=false,openP=-1,tt;
+const S=()=>D.settings,vis=()=>D.products.filter(x=>!x.hide),byId=id=>D.products.find(p=>p.id==id);
+const heart='<svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>';
+const trash='<svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6"/></svg>';
+const pic=x=>{const u=safeImg(x.img);return u?`<img src="${esc(u)}" alt="${esc(x.n)}">`:art(LB[x.k]?x.k:"jar",(x.col||["#ccc","#777"]).map(hx),esc((x.l||x.n||"").toUpperCase()))};
+const wa=()=>"https://wa.me/"+String(S().whatsapp).replace(/\D/g,"");
+function toast(m,undo){const t=$("toast");t.innerHTML=`<span>${esc(m)}</span>${undo?'<button type="button" id="undo">Undo</button>':""}`;t.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("on"),6500);if(undo)$("undo").onclick=()=>{undo();t.classList.remove("on")}}
+
+// ---- storefront ----
+function renderChrome(){const s=S();document.title=s.name+" – Pure Organic Food, Delivered";$("lg").textContent=s.name;const lu=safeImg(s.logo);$("lgi").style.display=lu?"block":"none";if(lu){$("lgi").src=lu;$("lgi").alt=s.name}document.querySelector(".logo i").style.display=lu?"none":"";$("lg").style.display=lu?"none":"";
+ let fv=document.querySelector("link[rel=icon]");if(!fv){fv=document.createElement("link");fv.rel="icon";document.head.appendChild(fv)}if(lu)fv.href=lu;
+ $("info").innerHTML=D.feats.map(f=>`<div><h3>${esc(f.h)}</h3><p>${esc(f.p)}</p></div>`).join("");
+ $("ft").textContent=`© ${new Date().getFullYear()} ${s.name} · Hotline: ${s.hotline} · ${s.address}`;
+ $("track").href=wa()+"?text="+encodeURIComponent("Hello, I’d like to check the status of my order.");
+ $("chat").href=wa()+"?text="+encodeURIComponent("Hello, I have a question about your products.");$("mcontact").href=$("chat").href}
+function renderNav(){const N=["Offer Zone",...D.cats];if(cat!="All"&&cat!="Wishlist"&&!N.includes(cat))cat="All";$("nav").innerHTML=N.map(n=>`<button type="button" data-go="${esc(n)}" aria-current="${n==cat}">${esc(n)}</button>`).join("")}
+function show(i){slide=i;document.querySelectorAll(".sl").forEach((e,j)=>e.classList.toggle("on",j==i));document.querySelectorAll(".dots button").forEach((e,j)=>e.setAttribute("aria-current",j==i))}
+function renderHero(){const L=D.slides;if(slide>=L.length)slide=0;
+ $("slider").innerHTML=L.map((s,i)=>{const u=safeImg(s.img),p=byId(s.pid)||vis()[0];return`<div class="sl${i==slide?" on":""}" style="background:linear-gradient(110deg,${hx(s.bg1)},${hx(s.bg2)});color:${hx(s.tc)}"><div><h1>${esc(s.h)}</h1><p>${esc(s.p)}</p><button class="btn" data-go="${esc(s.go)}" type="button">${esc(s.b)}</button></div><div class="art">${u?`<img src="${esc(u)}" alt="">`:p?pic(p):""}</div></div>`}).join("")+`<div class="dots">${L.map((_,i)=>`<button type="button" data-i="${i}" aria-label="Slide ${i+1}" aria-current="${i==slide}"></button>`).join("")}</div>`;
+ clearInterval(timer);if(L.length>1&&!matchMedia("(prefers-reduced-motion:reduce)").matches)timer=setInterval(()=>show((slide+1)%L.length),5500)}
+function renderPromo(){const r=D.promo,l=r.go=="Offer Zone"?vis().filter(x=>x.o):vis().filter(x=>x.c==r.go),t=(l.length?l:vis()).slice(0,3);
+ $("promo").style.background=`linear-gradient(160deg,${hx(r.c1)},${hx(r.c2)})`;
+ $("promo").innerHTML=`<small>${esc(r.s)}</small><h2>${esc(r.h)}<br>${esc(r.h2)}</h2><div class="trio" aria-hidden="true">${t.map(x=>pic(x)).join("")}</div><button class="btn" data-go="${esc(r.go)}" type="button" style="margin-top:16px">${esc(r.b)}</button>`}
+function renderCats(){$("cats").innerHTML=D.cats.map(n=>[n,vis().find(x=>x.c==n)]).filter(a=>a[1]).slice(0,6).map(([n,x])=>`<button class="cat" data-go="${esc(n)}" type="button">${pic(x)}<div>${esc(n)}</div></button>`).join("")}
+function list(){return vis().filter(x=>(cat=="All"||(cat=="Offer Zone"?x.o:cat=="Wishlist"?wish.includes(x.id):x.c==cat))&&x.n.toLowerCase().includes(term.trim().toLowerCase()))}
+function renderGrid(){const L=list();$("st").textContent=term?`Results for “${term.trim()}”`:cat=="All"?"Best Sellers":cat;$("sc").textContent=L.length+" products";
+ $("grid").innerHTML=L.length?L.map(x=>`<article class="card"><div class="pic">${x.o?`<span class="off">-${x.dt=="pct"?Math.round((x.o-x.p)/x.o*100)+"%":tk(x.o-x.p)}</span>`:""}<button class="wish" type="button" data-w="${x.id}" aria-pressed="${wish.includes(x.id)}" aria-label="Wishlist">${heart}</button>${pic(x)}</div><div class="info"><h3>${esc(x.n)}</h3><small>${esc(x.u)}</small><div class="price">${tk(x.p)}${x.o?`<s>${tk(x.o)}</s>`:""}</div><button class="add" type="button" data-id="${x.id}" ${x.out?"disabled":""}>${x.out?"Out of stock":"Add to cart"}</button></div></article>`).join(""):`<p class="empty">${cat=="Wishlist"?"Your wishlist is empty. Tap the heart on a product to save it.":"No products found. Try a different search."}</p>`;
+ $("wc").textContent=wish.length}
+function go(c,sc){cat=c;term="";$("q").value="";renderNav();renderGrid();if(sc!==false)$("shop").scrollIntoView()}
+
+// ---- cart (with remove, clear and undo) ----
+const ok=x=>x&&!x.hide&&!x.out;
+const totals=()=>{let sub=0,qty=0,save=0;for(const[id,q]of Object.entries(cart)){const x=byId(id);if(ok(x)){sub+=x.p*q;qty+=q;save+=(x.o>x.p?x.o-x.p:0)*q}}return{sub,qty,save}};
+const shipFor=s=>s==0||s>=S().free?0:/dhaka|ঢাকা/i.test($("ad").value)?+S().dhaka:+S().outside;
+function renderCart(){
+ for(const id of Object.keys(cart))if(!ok(byId(id)))delete cart[id];
+ const{sub,qty,save}=totals(),sh=shipFor(sub);
+ $("count").textContent=qty;$("fci").textContent=qty+(qty==1?" Item":" Items");$("fct").textContent=tk(sub)+".00";
+ $("items").innerHTML=qty?Object.entries(cart).map(([id,q])=>{const x=byId(id);return`<div class="row"><div class="e">${pic(x)}</div><div class="t"><b>${esc(x.n)}</b><small>${esc(x.u)} · ${tk(x.p)}</small><div class="qty"><button type="button" data-d="-1" data-id="${id}" aria-label="Decrease">−</button><input class="qn" type="number" min="1" max="99" value="${q}" data-q="${id}" aria-label="Quantity"><button type="button" data-d="1" data-id="${id}" aria-label="Increase">+</button></div></div><div class="side"><b>${tk(x.p*q)}</b><button class="rm" type="button" data-rm="${id}" aria-label="Remove ${esc(x.n)}">${trash} Remove</button></div></div>`}).join(""):`<p class="empty">Your cart is empty. Add something you like.</p>`;
+ $("sub").textContent=tk(sub);$("sv").textContent="-"+tk(save);$("svrow").style.display=save?"":"none";$("ship").textContent=sh?tk(sh):"Free";$("tot").textContent=tk(sub+sh);$("co").style.display=qty?"":"none";$("clr").hidden=!qty}
+function openCart(on){$("cart").classList.toggle("on",on);$("shade").classList.toggle("on",on);$("cart").setAttribute("aria-hidden",String(!on));(on?$("closeCart"):$("openCart")).focus()}
+function saveCart(){put("cart",cart);renderCart()}
+function change(id,d){cart[id]=Math.min(99,(cart[id]||0)+d);if(cart[id]<=0)return rem(id);saveCart()}
+function rem(id){const snap=clone(cart),x=byId(id);delete cart[id];saveCart();toast(`Removed “${x?x.n:"item"}” from cart`,()=>{cart=snap;saveCart()})}
+function clearAll(){if(!totals().qty)return;const snap=clone(cart);cart={};saveCart();toast("Cart cleared",()=>{cart=snap;saveCart()})}
+
+// ---- admin ----
+const get=(p,o=D)=>p.split(".").reduce((a,k)=>a==null?a:a[k],o);
+const setp=(p,v)=>{const k=p.split("."),l=k.pop();k.reduce((a,x)=>a[x],D)[l]=v};
+const inp=(p,l,t="text")=>`<label>${l}<input data-p="${p}" type="${t}" value="${esc(t=="color"?hx(get(p)):get(p))}"${t=="number"?' step="any" min="0"':""}></label>`;
+const txt=(p,l)=>`<label>${l}<textarea data-p="${p}" rows="2">${esc(get(p))}</textarea></label>`;
+const chk=(p,l)=>`<label class="ck"><input type="checkbox" data-p="${p}" ${get(p)?"checked":""}>${l}</label>`;
+const sel=(p,l,o,num)=>`<label>${l}<select data-p="${p}" ${num?"data-n=1":""}>${o.map(([v,t])=>`<option value="${esc(v)}" ${get(p)==v?"selected":""}>${esc(t)}</option>`).join("")}</select></label>`;
+const imgf=p=>{const v=get(p)||"",up=v.startsWith("data:"),u=safeImg(v);return`<div class="imgf"><label>Image (upload, or paste a link/path like img/honey.jpg)<input data-p="${p}" value="${up?"(uploaded photo)":esc(v)}" ${up?"readonly":""}></label>${u?`<img src="${esc(u)}" alt="">`:""}<label class="bt">Upload image<input type="file" accept="image/*" data-up="${p}" hidden></label>${v?`<button class="bt" type="button" data-a2="rmimg" data-p="${p}">Remove image</button>`:""}</div>`};
+const mv=(a,i)=>`<button class="bt" type="button" data-a2="mv" data-a="${a}" data-i="${i}" data-d="-1">↑</button><button class="bt" type="button" data-a2="mv" data-a="${a}" data-i="${i}" data-d="1">↓</button><button class="bt dng" type="button" data-a2="del" data-a="${a}" data-i="${i}">Delete</button>`;
+const catOpts=(cur)=>[...new Set([...D.cats,cur].filter(Boolean))].map(c=>[c,c]);
+const goOpts=()=>[["Offer Zone","Offer Zone"],...D.cats.map(c=>[c,c])];
+function reprice(x){const rp=Math.max(0,Math.round(+x.rp||0));let dv=Math.max(0,+x.dv||0);
+ const off=x.dt=="pct"?Math.round(rp*Math.min(dv,99)/100):Math.min(Math.round(dv),Math.max(0,rp-1));
+ if(off>0){x.o=rp;x.p=rp-off}else{x.o=0;x.p=rp}}
+const calcText=x=>{const rp=+x.rp||0;if(!(rp>0))return"Enter the regular price.";const dv=+x.dv||0,big=x.dt=="pct"?dv>99:dv>=rp;
+ return`Customers pay ${tk(x.p)}`+(x.o?` · regular price ${tk(x.o)} · they save ${tk(x.o-x.p)}`:" · no discount")+(big?" (the discount was too big, so it was reduced)":"")};
+const TABS=["Products","Order history","Monthly report","Categories","Banners","About us","Store settings","Backup","Admin profile"];
+function adm(){
+ const a=$("adm");
+ if(location.hash!=="#admin"){a.hidden=true;return}
+ a.hidden=false;
+ if(!unlocked||aview=="code"||aview=="newpw"){gate();return}
+ let h="";
+ if(tab=="Products")h=`<button class="btn" type="button" data-a2="addp">+ Add product</button>`+D.products.map((x,i)=>`<details class="pc" ${i==openP?"open":""}><summary><b>${esc(x.n)}</b> · ${tk(x.p)}${x.hide?" · hidden":""}${x.out?" · out of stock":""}</summary><div class="fg">${inp(`products.${i}.n`,"Product name")}${inp(`products.${i}.u`,"Size / unit (e.g. 500 g)")}${inp(`products.${i}.rp`,"Regular price (৳)","number")}${sel(`products.${i}.dt`,"Discount type",[["tk","Taka (৳)"],["pct","Percent (%)"]])}${inp(`products.${i}.dv`,"Discount amount (0 = no discount)","number")}<p class="calc" id="calc-${i}">${calcText(x)}</p>${sel(`products.${i}.c`,"Category",catOpts(x.c))}${chk(`products.${i}.out`,"Out of stock")}${chk(`products.${i}.hide`,"Hide from store")}</div>${imgf(`products.${i}.img`)}<p class="note">No photo? The pack illustration below is used instead.</p><div class="fg">${sel(`products.${i}.k`,"Pack shape",["jar","bottle","pouch","tin","box","sack"].map(v=>[v,v]))}${inp(`products.${i}.l`,"Text on pack")}${inp(`products.${i}.col.0`,"Color 1","color")}${inp(`products.${i}.col.1`,"Color 2 (darker)","color")}</div><div class="rw">${mv("products",i)}</div></details>`).join("");
+ if(tab=="Categories")h=`<p class="note">These appear in the top menu. Renaming updates all products in it.</p>`+D.cats.map((c,i)=>`<div class="rw"><input data-p="cats.${i}" value="${esc(c)}" aria-label="Category name">${mv("cats",i)}</div>`).join("")+`<div class="rw"><input id="nc" placeholder="New category name"><button class="btn" type="button" data-a2="addc">Add category</button></div>`;
+ if(tab=="Banners")h=`<h2>Hero slides</h2><button class="btn" type="button" data-a2="adds">+ Add slide</button>`+D.slides.map((s,i)=>`<details class="pc"><summary><b>${esc(s.h)}</b></summary><div class="fg">${inp(`slides.${i}.h`,"Headline")}${txt(`slides.${i}.p`,"Text")}${inp(`slides.${i}.b`,"Button text")}${sel(`slides.${i}.go`,"Button opens",goOpts())}${sel(`slides.${i}.pid`,"Show this product",D.products.map(x=>[x.id,x.n]),1)}${inp(`slides.${i}.bg1`,"Background color 1","color")}${inp(`slides.${i}.bg2`,"Background color 2","color")}${inp(`slides.${i}.tc`,"Text color","color")}</div>${imgf(`slides.${i}.img`)}<div class="rw">${mv("slides",i)}</div></details>`).join("")+`<hr><h2>Side banner</h2><div class="fg">${inp("promo.s","Small text")}${inp("promo.h","Title line 1")}${inp("promo.h2","Title line 2")}${inp("promo.b","Button text")}${sel("promo.go","Button opens",goOpts())}${inp("promo.c1","Color 1","color")}${inp("promo.c2","Color 2","color")}</div><hr><h2>Info strip (bottom)</h2>`+D.feats.map((f,i)=>`<div class="fg">${inp(`feats.${i}.h`,"Title")}${inp(`feats.${i}.p`,"Text")}</div>`).join("");
+ if(tab=="Store settings")h=`<div class="fg">${inp("settings.name","Store name")}${inp("settings.whatsapp","WhatsApp number (country code, no +, e.g. 8801712345678)")}${inp("settings.hotline","Hotline shown in footer")}${inp("settings.address","Address / city shown in footer")}${inp("settings.free","Free delivery above (৳)","number")}${inp("settings.dhaka","Delivery charge inside Dhaka (৳)","number")}${inp("settings.outside","Delivery charge outside Dhaka (৳)","number")}</div><h2>Logo</h2><p class="note">Shown in the top-left of your store. Square or round logos work best.</p>${imgf("settings.logo")}<p class="note">Your admin login (email and password) is managed in the Admin profile tab.</p>`;
+ if(tab=="Backup")h=`<div class="note" style="line-height:1.7"><b>How to make your changes live for all customers</b><br>1. Edit anything in this admin. Changes show instantly in this browser as a draft.<br>2. Click <b>Download store-data.json</b>.<br>3. Upload that file to your hosting, in the same folder as index.html, replacing the old one.<br>4. Customers see the update on their next visit.<br>Tip: uploaded photos are stored inside this file. With many photos, upload image files to your hosting and paste their path instead (e.g. img/honey.jpg).</div><p class="rw"><button class="btn" type="button" data-a2="dl">Download store-data.json</button><button class="bt" type="button" data-a2="copy">Copy data</button><label class="bt">Import data file<input type="file" accept=".json,application/json" data-imp="1" hidden></label></p><hr><p class="rw"><button class="bt" type="button" data-a2="discard">Discard my draft (back to live version)</button><button class="bt dng" type="button" data-a2="sample">Restore sample data</button></p>`;
+ if(tab=="About us")h=`<p class="note">This is the page customers see from <b>More → About us</b>. Phone and address come from the Store settings tab. Leave a blank line between paragraphs.</p><div class="fg">${inp("about.title","Page title")}${inp("about.email","Email (optional)")}${inp("about.hours","Opening / delivery hours")}${inp("about.fb","Facebook page link (starts with https://, optional)")}</div><div class="fg"><label>Your story and details<textarea data-p="about.text" rows="12">${esc(get("about.text"))}</textarea></label></div>${imgf("about.img")}`;
+ if(tab=="Admin profile")h=useDB?dbProfileTab():`<p class="note">Signed in as <b>${esc(adminAcc.email)}</b>. This login protects the admin panel in this browser.</p>
+<h2>Profile</h2><div class="fg"><label>Your name<input id="p-n" value="${esc(adminAcc.n)}"></label></div><button class="bt" type="button" data-g="pname">Save name</button>
+<hr><h2>Change email (Gmail)</h2><div class="fg"><label>New email<input id="p-e" type="email" autocomplete="email"></label><label>Current password<input id="p-ew" type="password" autocomplete="current-password"></label></div><button class="bt" type="button" data-g="pemail">Change email</button>
+<hr><h2>Change password</h2><div class="fg"><label>Current password<input id="p-cw" type="password" autocomplete="current-password"></label><label>New password (at least 8 characters)<input id="p-nw" type="password" autocomplete="new-password"></label><label>Confirm new password<input id="p-nw2" type="password" autocomplete="new-password"></label></div><button class="bt" type="button" data-g="ppw">Change password</button>
+<hr><h2>Recovery code</h2><p class="note">Make a new recovery code. The old one stops working.</p><div class="fg"><label>Current password<input id="p-rw" type="password" autocomplete="current-password"></label></div><button class="bt" type="button" data-g="pcode">Make a new recovery code</button>
+<hr><button class="bt dng" type="button" data-g="logout">Sign out</button><p class="err" id="g-e" role="alert"></p>`;
+ if(tab=="Order history")h=ordersTab();if(tab=="Monthly report")h=reportTab();
+ if(tab=="Backup"&&useDB)h=`<p class="note">Your store is saved automatically in your cloud database, so nothing is lost when you close the browser. A backup copy is still a good idea.</p><p class="rw"><button class="btn" type="button" data-a2="dbsave">Save everything to the database now</button><button class="bt" type="button" data-a2="dl">Download a backup copy</button><label class="bt">Restore from a backup file<input type="file" accept=".json,application/json" data-imp="1" hidden></label></p>`;
+ a.innerHTML=`<div class="ad"><div class="rw" style="justify-content:space-between;align-items:center"><h1>Admin panel</h1><span><button class="bt" type="button" data-a2="dl">Download store-data.json</button> <a class="btn" href="#top">View store</a> <button class="bt" type="button" data-g="logout">Sign out</button></span></div>${storageOK?"":'<p class="err" style="font-size:1rem">Warning: this browser is blocking storage (private mode or restricted preview), so your changes, admin login and orders will NOT be kept. Open the site in a normal browser window, and download backups often.</p>'}<p class="note" id="savenote">${useDB?saveNote():hasDraft?"You have unpublished changes in this browser. Download the data file and upload it to publish.":"No changes yet."}</p><div class="atabs">${TABS.map(t=>`<button type="button" data-a2="tab" data-t="${t}" aria-pressed="${t==tab}">${t}</button>`).join("")}</div>${h}</div>`;
+}
+
+// ---- orders (kept only in this browser, never in the public store-data.json) ----
+const ST=["New","Confirmed","Delivered","Cancelled"],today=()=>new Date().toLocaleDateString("en-CA");
+let O=useDB?[]:store("orders",[]),omonth="All";
+const putO=()=>{if(!put("orders",O))toast("Browser storage is full. Download your orders CSV now.")};
+const mlabel=k=>new Date(k+"-01T00:00").toLocaleString("en",{month:"short",year:"2-digit"});
+const nextId=()=>Math.max(0,...O.map(x=>x.id))+1;
+async function save(f,data){try{const d=await window.claude?.use("downloads");if(d){await d.save({filename:f,data});return}}catch(e){if(e&&e.code=="declined")return}
+ const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([data]));a.download=f;document.body.appendChild(a);a.click();a.remove()}
+const q=v=>'"'+String(v??"").replace(/"/g,'""')+'"';
+const csv=()=>["Date,ID,Name,Mobile,Address,Items,Total,Status",...O.map(o=>[o.d,o.id,o.n,o.ph,o.ad,o.it,o.t,o.s].map(q).join(","))].join("\n");
+function ordersTab(){
+ const ms=[...new Set(O.map(o=>o.d.slice(0,7)))].sort().reverse();
+ const L=O.filter(o=>omonth=="All"||o.d.slice(0,7)==omonth).sort((a,b)=>b.d.localeCompare(a.d)||b.id-a.id);
+ const tot=L.filter(o=>o.s!="Cancelled").reduce((s,o)=>s+(+o.t||0),0);
+ return`<p class="note">Orders reach you on WhatsApp. Add them here to keep a history and build sales reports. They are saved only in this browser (never on your public website), so download the CSV backup regularly.</p>
+<details class="pc"><summary><b>+ Add an order</b></summary><div class="fg"><label>Paste the WhatsApp order message (optional)<textarea id="no-msg" rows="4"></textarea></label></div><p class="rw"><button class="bt" type="button" data-a2="parse">Fill form from message</button></p>
+<div class="fg"><label>Date<input id="no-d" type="date" value="${today()}"></label><label>Customer name<input id="no-n"></label><label>Mobile<input id="no-p"></label><label>Total (৳)<input id="no-t" type="number" min="0"></label><label>Status<select id="no-s">${ST.map(s=>`<option>${s}</option>`).join("")}</select></label></div>
+<div class="fg"><label>Address<textarea id="no-a" rows="2"></textarea></label><label>Items<textarea id="no-i" rows="2"></textarea></label></div><button class="btn" type="button" data-a2="addo">Save order</button></details>
+<div class="rw"><select data-of="1" aria-label="Month" style="width:auto"><option value="All">All months</option>${ms.map(m=>`<option value="${m}" ${m==omonth?"selected":""}>${mlabel(m)}</option>`).join("")}</select><b>${L.length} orders · ${tk(tot)}</b><span style="flex:1"></span><button class="bt" type="button" data-a2="csv">Download CSV</button>${useDB?"":'<button class="bt" type="button" data-a2="demo">Load sample orders</button><button class="bt dng" type="button" data-a2="clro">Delete all</button>'}</div>
+${L.length?`<div class="otw"><table class="ot"><thead><tr><th>Date</th><th>#</th><th>Customer</th><th>Items</th><th>Total</th><th>Status</th><th></th></tr></thead><tbody>${L.map(o=>`<tr><td>${esc(o.d)}</td><td>${esc(o.no||o.id)}</td><td><b>${esc(o.n)}</b><br><small>${esc(o.ph)}</small><br><small>${esc(o.ad)}</small></td><td><small>${esc(o.it).replace(/\n/g,"<br>")}</small></td><td>${tk(o.t)}</td><td><select data-os="${o.id}" aria-label="Status">${ST.map(s=>`<option ${s==o.s?"selected":""}>${s}</option>`).join("")}</select></td><td><button class="bt dng" type="button" data-a2="delo" data-i="${o.id}">Delete</button></td></tr>`).join("")}</tbody></table></div>`:`<p class="empty">No orders yet. Add your first order above.</p>`}`}
+function chart(vals,keys,title,fmt){
+ const W=640,H=230,pl=8,pb=28,pt=26,mx=Math.max(1,...vals),bw=(W-pl*2)/vals.length;
+ return`<h2>${title}</h2><div class="chw"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${title}">`+vals.map((v,i)=>{const h=(H-pb-pt)*v/mx,x=pl+i*bw+bw*.16,y=H-pb-h,cx=x+bw*.34;return`<rect x="${x}" y="${y}" width="${bw*.68}" height="${h}" rx="4" fill="var(--org)"><title>${mlabel(keys[i])}: ${fmt?fmt(v):v}</title></rect>${v?`<text x="${cx}" y="${y-6}" text-anchor="middle" font-size="11" fill="var(--ink)">${fmt?fmt(v):v}</text>`:""}<text x="${cx}" y="${H-10}" text-anchor="middle" font-size="11" fill="var(--muted)">${mlabel(keys[i])}</text>`}).join("")+`<line x1="0" x2="${W}" y1="${H-pb}" y2="${H-pb}" stroke="var(--line)"/></svg></div>`}
+function reportTab(){
+ const by={},keys=[],now=new Date();
+ O.filter(o=>o.s!="Cancelled").forEach(o=>{const k=o.d.slice(0,7);(by[k]=by[k]||{c:0,r:0});by[k].c++;by[k].r+=+o.t||0});
+ for(let i=11;i>=0;i--){const d=new Date(now.getFullYear(),now.getMonth()-i,1);keys.push(d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0"))}
+ const cur=by[keys[11]]||{c:0,r:0},all=keys.reduce((s,k)=>({c:s.c+(by[k]?.c||0),r:s.r+(by[k]?.r||0)}),{c:0,r:0}),k2=v=>"৳"+(v>=1000?(+(v/1000).toFixed(1))+"k":v);
+ return`<p class="note">Cancelled orders are not counted. Data comes from the Order history tab.</p>
+<div class="kp"><div><span>Orders this month (${mlabel(keys[11])})</span><b>${cur.c}</b></div><div><span>Sales this month</span><b>${tk(cur.r)}</b></div><div><span>Average order this month</span><b>${tk(cur.c?Math.round(cur.r/cur.c):0)}</b></div><div><span>Last 12 months</span><b>${all.c} orders</b><span>${tk(all.r)}</span></div></div>
+${O.length?"":`<p class="empty">No orders recorded yet. Add orders in the Order history tab (or load sample orders there to preview these graphs).</p>`}
+${chart(keys.map(k=>by[k]?.c||0),keys,"Orders per month")}${chart(keys.map(k=>by[k]?.r||0),keys,"Sales per month (৳)",k2)}`}
+
+function resize(f,cb,mx=900){const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const s=Math.min(1,mx/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=Math.round(im.width*s);c.height=Math.round(im.height*s);const g=c.getContext("2d");g.fillStyle="#fff";g.fillRect(0,0,c.width,c.height);g.drawImage(im,0,0,c.width,c.height);cb(c.toDataURL("image/jpeg",.82))};im.onerror=()=>toast("That file isn’t a valid image.");im.src=r.result};r.readAsDataURL(f)}
+const pub=()=>{const c=clone(D);delete c.settings.pin;return JSON.stringify(c,null,1)};
+async function dl(){const data=pub();try{const d=await window.claude?.use("downloads");if(d){await d.save({filename:"store-data.json",data});return}}catch(e){if(e&&e.code=="declined")return}
+ const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([data],{type:"application/json"}));a.download="store-data.json";document.body.appendChild(a);a.click();a.remove()}
+function onEdit(e){const t=e.target;
+ if(t.dataset.os){const x=O.find(y=>y.id==t.dataset.os);if(x){x.s=t.value;if(useDB)sb("/rest/v1/orders?id=eq."+x.id,{method:"PATCH",headers:{Prefer:"return=minimal"},body:{s:t.value}}).catch(e=>toast("Could not update: "+e.message));else putO()}return}
+ if(t.dataset.of){omonth=t.value;adm();return}
+ if(t.dataset.up&&e.type=="change"&&t.files[0]){resize(t.files[0],async u=>{if(useDB){try{u=await dbUpload(u)}catch(x){return toast("Image upload failed: "+x.message)}}setp(t.dataset.up,u);persist();adm()},t.dataset.up=="settings.logo"?320:900);return}
+ if(t.dataset.imp&&e.type=="change"&&t.files[0]){t.files[0].text().then(s=>{const j=JSON.parse(s);if(!j.products)throw 0;D=merge(j);persist();adm();toast("Data imported.")}).catch(()=>toast("That file isn’t a valid store-data.json."));return}
+ const p=t.dataset.p;if(!p)return;
+ let v=t.type=="checkbox"?t.checked:t.type=="number"?(t.value===""?"":+t.value):t.dataset.n?+t.value:t.value;
+ if(p.startsWith("cats.")){const old=get(p);D.products.forEach(x=>{if(x.c===old)x.c=v});D.slides.forEach(s=>{if(s.go===old)s.go=v});if(D.promo.go===old)D.promo.go=v}
+ setp(p,v);if(/^products\.\d+\.(rp|dt|dv)$/.test(p)){const i=+p.split(".")[1],x=D.products[i];reprice(x);const c=$("calc-"+i);if(c)c.textContent=calcText(x)}persist();
+ if(p.endsWith(".n")||p.endsWith(".h")){const b=t.closest("details")?.querySelector("summary b");if(b)b.textContent=v}}
+function onAct(e){const t=e.target.closest("[data-a2]");if(!t)return;const a=t.dataset.a2,k=t.dataset.a,i=+t.dataset.i;
+ if(a=="dbsave"){dbSaveSoon();toast("Saving…");return}
+ if(useDB&&(a=="clro"||a=="demo"))return toast("Not available when the database is connected.");
+ if(a=="parse"){const m=$("no-msg").value,g=r=>((m.match(r)||[])[1]||"").trim();$("no-n").value=g(/Name:\s*(.+)/i);$("no-p").value=g(/Mobile:\s*(.+)/i);$("no-a").value=g(/Address:\s*(.+)/i);$("no-t").value=g(/(?:^|\n)\s*Total:\s*৳?\s*([\d,]+)/i).replace(/,/g,"");$("no-i").value=m.split("\n").filter(l=>l.trim().startsWith("•")).map(l=>l.replace(/^•\s*/,"")).join("\n");return}
+ if(a=="addo"){const tt=+$("no-t").value;if(!(tt>0))return toast("Enter the order total.");
+  const ob={d:$("no-d").value||today(),n:$("no-n").value.trim()||"Customer",ph:$("no-p").value.trim(),ad:$("no-a").value.trim(),it:$("no-i").value.trim(),t:tt,s:$("no-s").value};
+  if(useDB){sb("/rest/v1/orders",{method:"POST",headers:{Prefer:"return=minimal"},body:Object.assign({no:"M"+Date.now().toString(36).toUpperCase()},ob)}).then(dbLoadOrders).then(()=>{adm();toast("Order saved.")}).catch(x=>toast("Could not save: "+x.message));return}
+  O.push(Object.assign({id:nextId()},ob));putO();adm();toast("Order saved.");return}
+ if(a=="delo"&&useDB){sb("/rest/v1/orders?id=eq."+i,{method:"DELETE"}).then(dbLoadOrders).then(adm).catch(x=>toast("Could not delete: "+x.message));return}
+ if(a=="delo"){const snap=clone(O);O=O.filter(x=>x.id!=i);putO();adm();toast("Order deleted.",()=>{O=snap;putO();adm()});return}
+ if(a=="clro"){if(!O.length)return;const snap=clone(O);O=[];putO();adm();toast("All orders deleted.",()=>{O=snap;putO();adm()});return}
+ if(a=="csv")return save("orders.csv",csv());
+ if(a=="demo"){const snap=clone(O),now=new Date();let id=nextId()-1;[7,11,14,10,18,13].forEach((c,m)=>{const d0=new Date(now.getFullYear(),now.getMonth()-(5-m),1);for(let j=0;j<c;j++)O.push({id:++id,d:`${d0.getFullYear()}-${String(d0.getMonth()+1).padStart(2,"0")}-${String(1+(j*2)%24).padStart(2,"0")}`,n:"Sample customer",ph:"01700000000",ad:"Sample address",it:"Sample items",t:400+((j*263+m*97)%1900),s:j%9==0?"Cancelled":"Delivered"})});putO();adm();toast("Sample orders added. Use “Delete all” to remove them.",()=>{O=snap;putO();adm()});return}
+ if(a=="tab"){tab=t.dataset.t;openP=-1;adm();if(useDB&&(tab=="Order history"||tab=="Monthly report"))dbLoadOrders().then(adm).catch(e=>toast("Could not load orders: "+e.message));return}
+ if(a=="addp"){D.products.push({id:Math.max(0,...D.products.map(x=>x.id))+1,n:"New product",u:"1 pc",p:100,rp:100,dt:"tk",dv:0,c:D.cats[0]||"",k:"jar",col:["#f5b92e","#a65d00"],l:"NEW"});openP=D.products.length-1;persist();adm();return}
+ if(a=="adds"){D.slides.push({h:"New headline",p:"Describe your offer here.",b:"Shop now",go:"Offer Zone",pid:D.products[0]?.id,bg1:"#f7ead0",bg2:"#f0cf85",tc:"#2a1c06",img:""});persist();adm();return}
+ if(a=="addc"){const v=$("nc").value.trim();if(!v||D.cats.includes(v))return toast("Enter a new, unique category name.");D.cats.push(v);persist();adm();return}
+ if(a=="mv"){const L=D[k],j=i+ +t.dataset.d;if(j<0||j>=L.length)return;[L[i],L[j]]=[L[j],L[i]];openP=-1;persist();adm();return}
+ if(a=="del"){if(k=="cats"&&D.products.some(x=>x.c==D.cats[i]))return toast("This category still has products. Move or delete them first.");const snap=clone(D);D[k].splice(i,1);persist();adm();toast("Deleted.",()=>{D=snap;persist();adm()});return}
+ if(a=="rmimg"){setp(t.dataset.p,"");persist();adm();return}
+ if(a=="dl")return dl();
+ if(a=="copy"){navigator.clipboard.writeText(pub()).then(()=>toast("Data copied."),()=>toast("Copy was blocked. Use Download instead."));return}
+ if(a=="discard"){try{localStorage.removeItem("draft")}catch(x){}hasDraft=false;D=merge({});loadPublished();renderAll();adm();toast("Draft discarded.");return}
+ if(a=="sample"){D=merge({});persist();adm();toast("Sample data restored.")}}
+
+// ---- events ----
+document.addEventListener("click",e=>{
+ const g=e.target.closest("[data-go]");if(g){go(g.dataset.go);return}
+ const d=e.target.closest(".dots button");if(d){clearInterval(timer);show(+d.dataset.i);return}
+ const w=e.target.closest("[data-w]");if(w){const id=+w.dataset.w;wish=wish.includes(id)?wish.filter(v=>v!=id):[...wish,id];put("wish",wish);renderGrid();return}
+ const a=e.target.closest(".add");if(a&&!a.disabled){change(a.dataset.id,1);a.textContent="Added ✓";setTimeout(()=>a.textContent="Add to cart",900);return}
+ const r=e.target.closest("[data-rm]");if(r){rem(r.dataset.rm);return}
+ const q=e.target.closest(".items button");if(q)change(q.dataset.id,+q.dataset.d)});
+$("items").addEventListener("change",e=>{const q=e.target.dataset.q;if(!q)return;const n=Math.floor(+e.target.value);if(!(n>=1))return rem(q);cart[q]=Math.min(99,n);saveCart()});
+$("clr").onclick=clearAll;
+$("wl").onclick=()=>go("Wishlist");
+$("sf").onsubmit=e=>{e.preventDefault();cat="All";term=$("q").value;renderNav();renderGrid();$("shop").scrollIntoView()};
+$("q").addEventListener("input",e=>{term=e.target.value;if(cat!="All"&&term){cat="All";renderNav()}renderGrid()});
+$("openCart").onclick=$("fc").onclick=()=>openCart(true);
+$("closeCart").onclick=$("shade").onclick=()=>openCart(false);
+document.addEventListener("keydown",e=>{if(e.key=="Escape")openCart(false);if(e.key=="Enter"&&e.target.tagName=="INPUT"&&e.target.closest("#adm")){const b=$("adm").querySelector("[data-gp]");if(b)b.click()}});
+$("ad").addEventListener("input",renderCart);
+$("send").onclick=()=>{
+ const name=$("nm").value.trim(),ph=$("ph").value.trim().replace(/[\s-]/g,""),ad=$("ad").value.trim();
+ if(!name)return $("err").textContent="Please enter your name.";
+ if(!/^(\+?88)?01[3-9]\d{8}$/.test(ph))return $("err").textContent="Enter a valid mobile number, like 017XXXXXXXX.";
+ if(ad.length<10)return $("err").textContent="Enter your full address (area, thana, district).";
+ $("err").textContent="";
+ const{sub,save}=totals(),sh=shipFor(sub);
+ const lines=Object.entries(cart).map(([id,q])=>{const x=byId(id);return`• ${x.n} (${x.u}) × ${q} = ${tk(x.p*q)}`});
+ const no=useDB?"HT"+Date.now().toString(36).toUpperCase():"";const msg=`New order${no?" #"+no:""}\n\n${lines.join("\n")}\n\nSubtotal: ${tk(sub)}\n${save?`Discount saved: ${tk(save)}\n`:""}Delivery: ${sh?tk(sh):"Free"}\nTotal: ${tk(sub+sh)}\n\nName: ${name}\nMobile: ${ph}\nAddress: ${ad}\nPayment: Cash on delivery`;
+ const url=`${wa()}?text=${encodeURIComponent(msg)}`;
+ if(!useDB){window.open(url,"_blank","noopener");recordOrder(sub,sh,ad);return}
+ const w=window.open("about:blank","_blank");$("send").disabled=true;
+ dbPlaceOrder({no,name,ph,ad,lines,total:sub+sh}).then(()=>{cart={};saveCart();openCart(false);toast("Order #"+no+" received. Opening WhatsApp to confirm…")},e=>toast("We could not save the order online ("+e.message+"). Please send it on WhatsApp.")).finally(()=>{$("send").disabled=false;if(w){try{w.opener=null}catch(x){}w.location.href=url}else location.href=url})};
+
+// ---- admin login (email + password, saved hashed in this browser only) ----
+let adminAcc=store("admin",null),aview="",newCode="",fails=0,lockUntil=0;
+try{unlocked=!!adminAcc&&sessionStorage.getItem("adm_ok")==="1"}catch(e){}
+const em=v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v),nrm=c=>String(c).toUpperCase().replace(/[^A-Z0-9]/g,"");
+const rcode=()=>{const L="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";return[...crypto.getRandomValues(new Uint8Array(12))].map(x=>L[x%L.length]).join("").replace(/(.{4})(?=.)/g,"$1-")};
+const gm=m=>{const e=$("g-e");if(e)e.textContent=m;else toast(m)};
+function gate(){if(useDB){gateDB();return}
+ const f=(id,l,t,ac,ex="")=>`<label>${l}<input id="${id}" type="${t}" autocomplete="${ac}" ${ex}></label>`,pw=(id,l,ac)=>f(id,l,"password",ac,"data-pw"),
+ show='<label class="ck"><input type="checkbox" id="gshow">Show password</label>',er='<p class="err" id="g-e" role="alert"></p>';let h="";
+ if(aview=="code")h=`<h1>Save your recovery code</h1><p class="note">If you forget your password, this code is the only way to reset it. It is shown only once, so write it down or keep it somewhere safe.</p><p class="rcode">${esc(newCode)}</p><div><button class="bt" type="button" data-g="copycode">Copy code</button></div><button class="btn" type="button" data-g="codedone" data-gp>I have saved it. Continue</button>`;
+ else if(!adminAcc)h=`<h1>Create your admin account</h1><p class="note">This is the private login for your admin panel. Use your Gmail so you remember it.</p>${f("g-n","Your name","text","name")}${f("g-m","Email (Gmail)","email","email")}${pw("g-w","Password (at least 8 characters)","new-password")}${pw("g-w2","Confirm password","new-password")}${show}${er}<button class="btn" type="button" data-g="setup" data-gp>Create admin account</button><p><a class="lnk" href="#top">← Back to store</a></p>`;
+ else if(aview=="forgot")h=`<h1>Reset password</h1><p class="note">Enter the recovery code you saved when you created this account.</p>${f("g-m","Email","email","email")}${f("g-c","Recovery code","text","off")}${pw("g-w","New password (at least 8 characters)","new-password")}${pw("g-w2","Confirm new password","new-password")}${show}${er}<div><button class="btn" type="button" data-g="reset" data-gp>Reset password</button><button class="lnk" type="button" data-g="back" style="margin-left:16px">Back to sign in</button></div>`;
+ else h=`<h1>Admin sign in</h1>${f("g-m","Email","email","email")}${pw("g-w","Password","current-password")}${show}${er}<div><button class="btn" type="button" data-g="login" data-gp>Sign in</button><button class="lnk" type="button" data-g="forgot" style="margin-left:16px">Forgot password?</button></div><p><a class="lnk" href="#top">← Back to store</a></p>`;
+ $("adm").innerHTML=`<div class="ad" style="max-width:460px"><div class="gbox">${h}</div></div>`;const i=$("adm").querySelector("input:not([type=checkbox])");if(i)i.focus()}
+const adminOK=()=>{unlocked=true;try{sessionStorage.setItem("adm_ok","1")}catch(e){}};
+const chkPw=async id=>await hashPw(($(id)||{}).value||"",unb64(adminAcc.salt))===adminAcc.h;
+async function newSecrets(w){const s=crypto.getRandomValues(new Uint8Array(16)),r=crypto.getRandomValues(new Uint8Array(16)),code=rcode();return{salt:b64(s),h:await hashPw(w,s),rs:b64(r),rh:await hashPw(nrm(code),r),code}}
+async function gateAct(g){if(useDB)return gateActDB(g);
+ const v=id=>($(id)?$(id).value:"");
+ try{
+  if(g=="back"||g=="forgot"){aview=g=="forgot"?"forgot":"";gate();return}
+  if(g=="logout"){unlocked=false;try{sessionStorage.removeItem("adm_ok")}catch(e){}aview="";adm();return}
+  if(g=="copycode"){navigator.clipboard.writeText(newCode).then(()=>toast("Recovery code copied."),()=>toast("Copy was blocked. Please write it down."));return}
+  if(g=="codedone"){aview="";newCode="";adm();return}
+  if(g=="setup"){const m=v("g-m").trim().toLowerCase(),w=v("g-w");
+   if(!em(m))return gm("Enter a valid email address.");if(w.length<8)return gm("Password must be at least 8 characters.");if(w!==v("g-w2"))return gm("The two passwords don’t match.");
+   const s=await newSecrets(w);adminAcc={n:v("g-n").trim()||"Admin",email:m,salt:s.salt,h:s.h,rs:s.rs,rh:s.rh};put("admin",adminAcc);adminOK();newCode=s.code;aview="code";adm();return}
+  if(g=="login"||g=="reset"){
+   if(Date.now()<lockUntil)return gm("Too many attempts. Try again in "+Math.ceil((lockUntil-Date.now())/1000)+" seconds.");
+   const m=v("g-m").trim().toLowerCase();let good=m===adminAcc.email;
+   if(g=="login")good=good&&await hashPw(v("g-w"),unb64(adminAcc.salt))===adminAcc.h;
+   else good=good&&await hashPw(nrm(v("g-c")),unb64(adminAcc.rs))===adminAcc.rh;
+   if(!good){if(++fails>=5){fails=0;lockUntil=Date.now()+30000;return gm("Too many attempts. Please wait 30 seconds.")}return gm(g=="login"?"Wrong email or password.":"Email or recovery code is not correct.")}
+   fails=0;
+   if(g=="login"){adminOK();adm();return}
+   const w=v("g-w");if(w.length<8)return gm("New password must be at least 8 characters.");if(w!==v("g-w2"))return gm("The two passwords don’t match.");
+   const s=await newSecrets(w);Object.assign(adminAcc,{salt:s.salt,h:s.h,rs:s.rs,rh:s.rh});put("admin",adminAcc);adminOK();newCode=s.code;aview="code";adm();return}
+  if(!unlocked)return;
+  if(g=="pname"){adminAcc.n=v("p-n").trim()||"Admin";put("admin",adminAcc);toast("Name saved.");return}
+  if(!await chkPw(g=="pemail"?"p-ew":g=="ppw"?"p-cw":"p-rw"))return gm("Your current password is wrong.");
+  if(g=="pemail"){const m=v("p-e").trim().toLowerCase();if(!em(m))return gm("Enter a valid email address.");adminAcc.email=m;put("admin",adminAcc);adm();toast("Email changed. Use it next time you sign in.");return}
+  if(g=="ppw"){const w=v("p-nw");if(w.length<8)return gm("New password must be at least 8 characters.");if(w!==v("p-nw2"))return gm("The two new passwords don’t match.");
+   const s=await newSecrets(w);Object.assign(adminAcc,{salt:s.salt,h:s.h});put("admin",adminAcc);adm();toast("Password changed.");return}
+  if(g=="pcode"){const s=await newSecrets(v("p-rw"));Object.assign(adminAcc,{rs:s.rs,rh:s.rh});put("admin",adminAcc);newCode=s.code;aview="code";adm()}
+ }catch(x){gm("Something went wrong. Please use an up-to-date browser.")}}
+const A=$("adm");A.addEventListener("input",onEdit);A.addEventListener("change",onEdit);A.addEventListener("click",e=>{const g=e.target.closest("[data-g]");if(g)gateAct(g.dataset.g);else onAct(e)});A.addEventListener("change",e=>{if(e.target.id=="gshow")A.querySelectorAll("input[data-pw]").forEach(i=>i.type=e.target.checked?"text":"password")});
+window.addEventListener("hashchange",()=>{handleRecovery();adm();aboutPage()});
+let fc=0,ft0=0;$("ft").addEventListener("click",()=>{const n=Date.now();fc=n-ft0<2000?fc+1:1;ft0=n;if(fc>=5){fc=0;location.hash="admin"}});
+
+// ---- About us page (#about) ----
+function aboutPage(){const a=$("abt");if(location.hash!=="#about"){a.hidden=true;return}
+ const was=a.hidden,A2=D.about||DEF.about,u=safeImg(A2.img),s=S(),fb=/^https:\/\//.test(A2.fb||"")?A2.fb:"";
+ const c=[["Hotline",s.hotline&&`<a href="tel:${esc(String(s.hotline).replace(/[^\d+]/g,""))}">${esc(s.hotline)}</a>`],["WhatsApp",`<a href="${esc(wa())}" target="_blank" rel="noopener">Message us</a>`],["Address",s.address&&esc(s.address)],["Email",A2.email&&(A2.email.includes("@")?`<a href="mailto:${esc(A2.email)}">${esc(A2.email)}</a>`:esc(A2.email))],["Hours",A2.hours&&esc(A2.hours)],["Facebook",fb&&`<a href="${esc(fb)}" target="_blank" rel="noopener">Visit our page</a>`]].filter(x=>x[1]);
+ a.hidden=false;
+ a.innerHTML=`<div class="ad"><a class="lnk" href="#top">← Back to store</a><h1 style="margin-top:14px">${esc(A2.title)}</h1>${u?`<img class="aimg" src="${esc(u)}" alt="">`:""}<div class="atx">${esc(A2.text).split(/\n\s*\n/).map(p=>`<p>${p.replace(/\n/g,"<br>")}</p>`).join("")}</div><div class="kp">${c.map(([k,v])=>`<div><span>${k}</span><b style="font-size:1.05rem">${v}</b></div>`).join("")}</div></div>`;
+ if(was)a.scrollTop=0}
+
+// ---- customer accounts (sign up, sign in, My orders) - stored on this device only ----
+let accts=store("accounts",[]),orders=store("myorders",{}),cur=null,mview="in",lastSig="",lastT=0;
+{const sid=store("session",null);cur=accts.find(x=>x.ph===sid)||null}
+const saveAccts=()=>put("accounts",accts);
+const normPh=p=>String(p||"").trim().replace(/[\s-]/g,"").replace(/^\+?88/,"");
+const okPh=p=>/^01[3-9]\d{8}$/.test(p);
+const b64=u=>btoa(String.fromCharCode(...u)),unb64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+async function hashPw(pw,salt){const k=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveBits"]);return b64(new Uint8Array(await crypto.subtle.deriveBits({name:"PBKDF2",hash:"SHA-256",salt,iterations:100000},k,256)))}
+const aerr=m=>{const e=$("ac-e");if(e)e.textContent=m};
+function accUI(){$("acl").textContent=cur?cur.n.split(" ")[0]:"Sign In";
+ if(cur){if(!$("nm").value)$("nm").value=cur.n;if(!$("ph").value)$("ph").value=cur.ph;if(!$("ad").value)$("ad").value=cur.ad||""}}
+function renderAcc(){
+ const pw=(id,l,ac)=>`<label>${l}<input id="${id}" type="password" data-pw autocomplete="${ac}"></label>`,
+ show='<label class="ck"><input type="checkbox" id="showpw">Show password</label>',
+ phf=`<label>Mobile number<input id="ac-p" inputmode="tel" autocomplete="tel" placeholder="01XXXXXXXXX"></label>`,er='<p class="err" id="ac-e" role="alert"></p>';
+ let t="",h="";
+ if(!cur&&(mview=="in"||mview=="up")){
+  t=mview=="in"?"Sign in":"Create account";
+  h=`<div class="atabs"><button type="button" data-a3="v:in" aria-pressed="${mview=="in"}">Sign in</button><button type="button" data-a3="v:up" aria-pressed="${mview=="up"}">Create account</button></div>`+(mview=="in"
+   ?`${phf}${pw("ac-w","Password","current-password")}${show}${er}<div><button class="btn" type="button" data-a3="login" data-primary>Sign in</button><button class="lnk" type="button" data-a3="v:forgot" style="margin-left:16px">Forgot password?</button></div>`
+   :`<label>Full name<input id="ac-n" autocomplete="name"></label>${phf}<label>Delivery address (optional)<textarea id="ac-a" rows="2" autocomplete="street-address"></textarea></label>${pw("ac-w","Password (at least 6 characters)","new-password")}${pw("ac-w2","Confirm password","new-password")}${show}${er}<button class="btn" type="button" data-a3="signup" data-primary>Create account</button>${useDB?"":'<p class="note">Your account is saved on this device only. It won’t appear on other phones or computers.</p>'}`);
+ }else if(!cur){
+  t="Forgot password";
+  h=useDB?DBFORGOT():`<p class="note">Your password is saved only on this device, so it can’t be recovered. You can remove the account from this device and create it again with a new password. Orders saved under this account on this device will be deleted.</p>${phf}${er}<div><button class="btn" type="button" data-a3="reset" data-primary>Remove account</button><button class="lnk" type="button" data-a3="v:in" style="margin-left:16px">Back to sign in</button></div>`;
+ }else{
+  const L=useDB?myOrd:(orders[cur.ph]||[]);t="Hi, "+esc(cur.n)+"!";
+  h=`<div class="atabs"><button type="button" data-a3="v:me" aria-pressed="${mview!="ord"}">Profile</button><button type="button" data-a3="v:ord" aria-pressed="${mview=="ord"}">My orders (${L.length})</button></div>`+(mview=="ord"
+   ?(L.length?L.map(r=>`<div class="ord"><b>${esc(r.d)} · ${tk(r.t)}</b><small>${r.items.map(i=>`${esc(i.n)} × ${i.q}`).join(", ")}</small><div><button class="bt" type="button" data-a3="reorder:${r.id}">Order again</button></div></div>`).join(""):`<p class="note">No orders yet. Orders you place while signed in will appear here.</p>`)+`<div><button class="lnk" type="button" data-a3="logout">Sign out</button></div>`
+   :`<label>Mobile number<input value="${esc(cur.ph)}" readonly></label><label>Full name<input id="ac-n" value="${esc(cur.n)}" autocomplete="name"></label><label>Delivery address<textarea id="ac-a" rows="2" autocomplete="street-address">${esc(cur.ad)}</textarea></label>${pw("ac-w","New password (leave empty to keep the current one)","new-password")}${show}${er}<div><button class="btn" type="button" data-a3="saveprof" data-primary>Save changes</button><button class="lnk" type="button" data-a3="logout" style="margin-left:16px">Sign out</button></div>`);
+ }
+ const m=$("acc");m.hidden=false;
+ m.innerHTML=`<div class="mc" role="dialog" aria-modal="true" aria-label="Account"><div class="ah"><h2>${t}</h2><button class="x" type="button" data-a3="close" aria-label="Close">×</button></div><div class="mb">${h}</div></div>`;
+ const f=m.querySelector("input:not([readonly])");if(f)f.focus()}
+function loginAs(u){cur=u;put("session",u.ph);$("nm").value=u.n;$("ph").value=u.ph;$("ad").value=u.ad||"";accUI();renderCart();$("acc").hidden=true;toast("Welcome, "+u.n.split(" ")[0]+"!")}
+function recordOrder(sub,sh,ad){if(!cur)return;
+ const items=Object.entries(cart).map(([id,q])=>{const x=byId(id);return{id:+id,n:x.n,u:x.u,p:x.p,q}}),sig=JSON.stringify(items);
+ if(sig===lastSig&&Date.now()-lastT<60000)return;lastSig=sig;lastT=Date.now();
+ (orders[cur.ph]=orders[cur.ph]||[]).unshift({id:Date.now(),d:today(),items,t:sub+sh,ad});put("myorders",orders);
+ toast("Order sent on WhatsApp. You can see it in your account under My orders.")}
+$("acct").onclick=()=>{mview=cur?"me":"in";renderAcc()};
+$("acc").addEventListener("click",async e=>{
+ const t=e.target.closest("[data-a3]"),a=t?t.dataset.a3:e.target.id=="acc"?"close":"";if(!a)return;
+ try{
+  if(a=="close"){$("acc").hidden=true;return}
+  if(a.startsWith("v:")){mview=a.slice(2);renderAcc();if(useDB&&cur&&mview=="ord")dbMyOrders().then(l=>{myOrd=l;renderAcc()}).catch(()=>{});return}
+  if(a=="login"){const ph=normPh($("ac-p").value),u=accts.find(x=>x.ph===ph);
+   if(!okPh(ph))return aerr("Enter a valid mobile number, like 017XXXXXXXX.");
+   if(useDB){const s=await authIn(pEmail(ph),$("ac-w").value),pr=await dbProfile(s.user.id);return loginAs({ph,n:pr?pr.n:"Customer",ad:pr?pr.ad||"":"",uid:s.user.id})}
+   if(!u)return aerr("No account found for this number on this device. Please create one first.");
+   if(await hashPw($("ac-w").value,unb64(u.salt))!==u.h)return aerr("Wrong password.");
+   return loginAs(u)}
+  if(a=="signup"){const n=$("ac-n").value.trim(),ph=normPh($("ac-p").value),pw=$("ac-w").value;
+   if(!n)return aerr("Please enter your name.");
+   if(!okPh(ph))return aerr("Enter a valid mobile number, like 017XXXXXXXX.");
+   if(accts.some(x=>x.ph===ph))return aerr("An account with this number already exists. Please sign in.");
+   if(pw.length<6)return aerr("Password must be at least 6 characters.");
+   if(pw!==$("ac-w2").value)return aerr("The two passwords don’t match.");
+   if(useDB){const s=await authUp(pEmail(ph),pw,{name:n,phone:ph}),ad2=$("ac-a").value.trim();await sb("/rest/v1/profiles",{method:"POST",headers:{Prefer:"return=minimal"},body:{id:s.user.id,n,ph,ad:ad2}});return loginAs({ph,n,ad:ad2,uid:s.user.id})}
+   const salt=crypto.getRandomValues(new Uint8Array(16)),u={ph,n,ad:$("ac-a").value.trim(),salt:b64(salt),h:await hashPw(pw,salt)};
+   accts.push(u);saveAccts();return loginAs(u)}
+  if(a=="reset"){const ph=normPh($("ac-p").value),i=accts.findIndex(x=>x.ph===ph);
+   if(i<0)return aerr("No account found for this number on this device.");
+   accts.splice(i,1);saveAccts();delete orders[ph];put("myorders",orders);mview="up";renderAcc();toast("Account removed. Create it again with a new password.");return}
+  if(a=="saveprof"){const n=$("ac-n").value.trim(),pw=$("ac-w").value;
+   if(!n)return aerr("Please enter your name.");
+   if(pw&&pw.length<6)return aerr("New password must be at least 6 characters.");
+   if(useDB){const ad2=$("ac-a").value.trim();await sb("/rest/v1/profiles?id=eq."+cur.uid,{method:"PATCH",headers:{Prefer:"return=minimal"},body:{n,ad:ad2}});if(pw)await sb("/auth/v1/user",{method:"PUT",body:{password:pw}});cur.n=n;cur.ad=ad2;$("nm").value=cur.n;$("ad").value=cur.ad;accUI();renderCart();renderAcc();toast("Account updated.");return}
+   cur.n=n;cur.ad=$("ac-a").value.trim();
+   if(pw){const salt=crypto.getRandomValues(new Uint8Array(16));cur.salt=b64(salt);cur.h=await hashPw(pw,salt)}
+   saveAccts();$("nm").value=cur.n;$("ad").value=cur.ad;accUI();renderCart();renderAcc();toast("Account updated.");return}
+  if(a=="logout"){if(useDB)await authOut();cur=null;try{localStorage.removeItem("session")}catch(x){}$("nm").value=$("ph").value=$("ad").value="";accUI();renderCart();$("acc").hidden=true;toast("Signed out.");return}
+  if(a.startsWith("reorder:")){const r=(useDB?myOrd:(orders[cur.ph]||[])).find(x=>x.id==a.slice(8));if(!r)return;let n=0;
+   r.items.forEach(i=>{if(ok(byId(i.id))){cart[i.id]=Math.min(99,(cart[i.id]||0)+i.q);n++}});saveCart();$("acc").hidden=true;
+   toast(n?"Items added to your cart.":"Those products are no longer available.");if(n)openCart(true)}
+ }catch(x){aerr(useDB&&x&&x.message?fe(x.message):"Something went wrong. Please try again in an up-to-date browser.")}});
+$("acc").addEventListener("change",e=>{if(e.target.id=="showpw")$("acc").querySelectorAll("input[data-pw]").forEach(i=>i.type=e.target.checked?"text":"password")});
+$("acc").addEventListener("keydown",e=>{if(e.key=="Enter"&&e.target.tagName=="INPUT"){const b=$("acc").querySelector("[data-primary]");if(b)b.click()}});
+
+// ---- More menu ----
+const mm=$("moremenu"),mb=$("more");
+mb.onclick=()=>{const o=mm.hidden;mm.hidden=!o;mb.setAttribute("aria-expanded",String(o))};
+document.addEventListener("click",e=>{if(!mm.hidden&&!e.target.closest("#more")){mm.hidden=true;mb.setAttribute("aria-expanded","false")}});
+document.addEventListener("keydown",e=>{if(e.key=="Escape"){mm.hidden=true;$("acc").hidden=true}});
+function renderAll(){renderChrome();accUI();aboutPage();renderNav();renderHero();renderPromo();renderCats();renderGrid();renderCart()}
+handleRecovery();renderAll();adm();if(!hasDraft)loadPublished();if(useDB)dbInit();
+</script>
+
+</body>
+</html>
